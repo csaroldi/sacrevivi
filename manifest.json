@@ -1,0 +1,18 @@
+{
+  "name": "Vivi's Parisian Adventure",
+  "short_name": "Vivi Paris",
+  "description": "Vivi's personal Paris travel guide — works offline.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#2A1F4E",
+  "theme_color": "#2A1F4E",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%232A1F4E'/%3E%3Cg fill='%23FDF8F0'%3E%3Cpath d='M 76 180 C 88 180,98 184,104 200 L 156 338 C 160 348,164 352,170 352 L 158 366 C 146 366,138 356,132 340 L 80 206 C 76 196,70 188,62 184 Z M 208 180 L 220 180 C 214 184,208 192,202 206 L 158 316 C 156 322,155 328,154 332 L 146 330 L 192 208 C 198 192,204 184,208 180 Z'/%3E%3Cpath d='M 232 224 L 248 220 L 232 334 C 231 340,230 346,232 348 L 220 352 C 218 348,220 340,221 334 Z'/%3E%3Ccircle cx='247' cy='198' r='9'/%3E%3Cpath d='M 272 224 C 280 224,286 228,290 240 L 318 318 L 350 240 C 354 230,360 224,366 224 L 366 232 C 360 234,356 240,352 250 L 322 334 C 320 338,318 340,316 340 C 314 340,312 338,310 334 L 280 250 C 276 240,272 234,268 232 Z'/%3E%3Cpath d='M 388 224 L 404 220 L 388 334 C 387 340,386 346,388 348 L 376 352 C 374 348,376 340,377 334 Z'/%3E%3C/g%3E%3Cg fill='%23C9963A'%3E%3Cpolygon points='402,155 400,170 404,170'/%3E%3Crect x='399' y='170' width='2' height='5'/%3E%3Cpolygon points='402,175 392,198 412,198'/%3E%3Crect x='393' y='193' width='19' height='3'/%3E%3Cpolygon points='392,198 386,218 418,218'/%3E%3Crect x='387' y='214' width='31' height='3'/%3E%3Cpolygon points='386,218 380,235 424,235'/%3E%3Crect x='381' y='232' width='42' height='3'/%3E%3C/g%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

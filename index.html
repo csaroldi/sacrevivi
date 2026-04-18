@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Vivi's Paris Rendez-vous</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Vivi Paris">
+<meta name="theme-color" content="#2C2018">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232A1F4E'/%3E%3Cstop offset='100%25' stop-color='%231a1230'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='50%25' cy='35%25' r='65%25'%3E%3Cstop offset='0%25' stop-color='%23C9963A' stop-opacity='0.2'/%3E%3Cstop offset='100%25' stop-color='%23C9963A' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23bg)'/%3E%3Crect width='512' height='512' rx='112' fill='url(%23glow)'/%3E%3Cg fill='%23FDF8F0'%3E%3Cpath d='M 76 180 C 88 180, 98 184, 104 200 L 156 338 C 160 348, 164 352, 170 352 L 158 366 C 146 366, 138 356, 132 340 L 80 206 C 76 196, 70 188, 62 184 Z M 208 180 L 220 180 C 214 184, 208 192, 202 206 L 158 316 C 156 322, 155 328, 154 332 L 146 330 L 192 208 C 198 192, 204 184, 208 180 Z'/%3E%3Cpath d='M 232 224 L 248 220 L 232 334 C 231 340, 230 346, 232 348 L 220 352 C 218 348, 220 340, 221 334 Z'/%3E%3Ccircle cx='247' cy='198' r='9'/%3E%3Cpath d='M 272 224 C 280 224, 286 228, 290 240 L 318 318 L 350 240 C 354 230, 360 224, 366 224 L 366 232 C 360 234, 356 240, 352 250 L 322 334 C 320 338, 318 340, 316 340 C 314 340, 312 338, 310 334 L 280 250 C 276 240, 272 234, 268 232 Z'/%3E%3Cpath d='M 388 224 L 404 220 L 388 334 C 387 340, 386 346, 388 348 L 376 352 C 374 348, 376 340, 377 334 Z'/%3E%3C/g%3E%3C!-- Eiffel Tower replacing tittle of last i --%3E%3Cg fill='%23C9963A'%3E%3Cpolygon points='402,155 400,170 404,170'/%3E%3Crect x='399' y='170' width='2' height='5'/%3E%3Cpolygon points='402,175 392,198 412,198'/%3E%3Crect x='393' y='193' width='19' height='3'/%3E%3Cpolygon points='392,198 386,218 418,218'/%3E%3Crect x='387' y='214' width='31' height='3'/%3E%3Cpolygon points='386,218 380,235 424,235'/%3E%3Crect x='381' y='232' width='42' height='3'/%3E%3C/g%3E%3Crect x='216' y='400' width='80' height='1.5' fill='%23C9963A' opacity='0.6'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232A1F4E'/%3E%3Cstop offset='100%25' stop-color='%231a1230'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23bg)'/%3E%3Cg fill='%23FDF8F0'%3E%3Cpath d='M 76 180 C 88 180,98 184,104 200 L 156 338 C 160 348,164 352,170 352 L 158 366 C 146 366,138 356,132 340 L 80 206 C 76 196,70 188,62 184 Z M 208 180 L 220 180 C 214 184,208 192,202 206 L 158 316 C 156 322,155 328,154 332 L 146 330 L 192 208 C 198 192,204 184,208 180 Z'/%3E%3Cpath d='M 232 224 L 248 220 L 232 334 C 231 340,230 346,232 348 L 220 352 C 218 348,220 340,221 334 Z'/%3E%3Ccircle cx='247' cy='198' r='9'/%3E%3Cpath d='M 272 224 C 280 224,286 228,290 240 L 318 318 L 350 240 C 354 230,360 224,366 224 L 366 232 C 360 234,356 240,352 250 L 322 334 C 320 338,318 340,316 340 C 314 340,312 338,310 334 L 280 250 C 276 240,272 234,268 232 Z'/%3E%3Cpath d='M 388 224 L 404 220 L 388 334 C 387 340,386 346,388 348 L 376 352 C 374 348,376 340,377 334 Z'/%3E%3C/g%3E%3Cg fill='%23C9963A'%3E%3Cpolygon points='402,155 400,170 404,170'/%3E%3Crect x='399' y='170' width='2' height='5'/%3E%3Cpolygon points='402,175 392,198 412,198'/%3E%3Crect x='393' y='193' width='19' height='3'/%3E%3Cpolygon points='392,198 386,218 418,218'/%3E%3Crect x='387' y='214' width='31' height='3'/%3E%3Cpolygon points='386,218 380,235 424,235'/%3E%3Crect x='381' y='232' width='42' height='3'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAF5EC;--cream-d:#F2E8D5;
+  --stone:#2C2018;--stone-l:#3D2E1E;--stone-d:#1a1208;--stone-faint:rgba(44,32,24,0.06);
+  --terra:#C4603A;--terra-l:#E09070;--terra-p:#F5D8CC;--terra-faint:rgba(196,96,58,0.09);
+  --gold:#C9963A;--gold-l:#E8C07A;--gold-p:#F5E6C8;--gold-faint:rgba(196,96,58,0.09);
+  --text:#2E2010;--text-l:#6E5840;--text-m:#A88A70;
+  --white:#fff;
+  --border:rgba(196,96,58,0.14);--border-terra:rgba(224,144,112,0.22);
+  --shadow:0 2px 20px rgba(44,32,24,0.08);
+  --ink:#1e1508;--ink2:#2a1e0e;--ink3:#352815;
+}
+html{font-size:16px;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--cream);color:var(--text);min-height:100vh;overflow-x:hidden;padding-bottom:110px}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:0.3}
+
+/* Controls */
+.top-controls{position:fixed;top:16px;right:16px;z-index:1000;display:flex;gap:8px;align-items:center}
+.lang-group{display:flex;gap:0;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:rgba(253,248,240,0.95);backdrop-filter:blur(10px)}
+.ctrl-btn{height:30px;padding:0 12px;border:none;background:transparent;color:var(--text-m);font-size:0.62rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all 0.2s;font-family:'DM Sans',sans-serif}
+.ctrl-btn.active{background:var(--terra);color:var(--ink)}
+.theme-btn{border-radius:20px;font-size:0.8rem;width:30px;padding:0;border:1px solid var(--border);background:rgba(253,248,240,0.95);backdrop-filter:blur(10px)}
+
+/* Cover */
+.cover{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;padding:60px 24px;background:linear-gradient(160deg,#2C2018 0%,#3D2E1E 45%,#4A3826 100%)}
+.cover::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at 40% 30%,rgba(196,96,58,0.12) 0%,transparent 50%),radial-gradient(ellipse at 70% 70%,rgba(196,133,122,0.08) 0%,transparent 50%);animation:shimmer 20s ease-in-out infinite alternate}
+@keyframes shimmer{0%{transform:translate(0,0) rotate(0deg)}100%{transform:translate(-5%,3%) rotate(2deg)}}
+/* Stars on cover */
+.cover-stars{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.cover-star{position:absolute;border-radius:50%;background:white;animation:twinkle var(--d,3s) ease-in-out infinite var(--delay,0s);opacity:var(--o,.3)}
+@keyframes twinkle{0%,100%{opacity:var(--o,.3)}50%{opacity:0.05}}
+
+.cover-fleur{font-size:3.5rem;margin-bottom:16px;position:relative;z-index:1;opacity:0;animation:fadeUp 1s 0.1s forwards}
+.cover-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,8vw,4rem);font-weight:300;line-height:1.1;color:var(--cream);margin-bottom:4px;position:relative;z-index:1;opacity:0;animation:fadeUp 1s 0.3s forwards}
+.cover-title em{font-style:italic;font-weight:400;color:var(--terra-l)}
+.cover-author{font-size:0.56rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:rgba(245,232,200,0.5);margin-top:12px;position:relative;z-index:1;opacity:0;animation:fadeUp 1s 0.5s forwards}
+.cover-rule{width:60px;height:1px;background:var(--terra);margin:20px auto;position:relative;z-index:1;opacity:0;animation:fadeUp 1s 0.7s forwards}
+.cover-dates{font-size:0.75rem;font-weight:600;letter-spacing:2px;color:var(--terra-l);margin-top:24px;position:relative;z-index:1;opacity:0;animation:fadeUp 1s 0.9s forwards}
+.cover-scroll{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);color:rgba(196,96,58,0.4);font-size:1.2rem;animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* Section headers */
+.section-header{padding:48px 28px 8px}
+.section-tag{font-size:0.58rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--terra);display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.section-tag::before{content:'';width:20px;height:1px;background:var(--terra)}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;color:var(--text);line-height:1.1}
+.section-title em{font-style:italic;color:var(--terra)}
+.section-intro-text{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:var(--text-l);margin-top:10px;line-height:1.7;max-width:340px}
+.section-rule{height:1px;background:linear-gradient(90deg,transparent,var(--border-terra),transparent);margin:40px 28px 0}
+
+/* Essentials */
+.essentials-list{padding:16px 16px 0}
+.ess-card{margin-bottom:10px;border-radius:14px;background:var(--white);border:1px solid var(--border);overflow:hidden;box-shadow:var(--shadow);animation:cardUp 0.5s ease-out both}
+.ess-card.open{border-color:var(--terra-l)}
+@keyframes cardUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.ess-trigger{width:100%;background:none;border:none;padding:18px 20px;cursor:pointer;display:flex;align-items:center;gap:14px;text-align:left}
+.ess-icon{width:36px;height:36px;border-radius:10px;background:var(--terra-faint);border:1px solid var(--border-terra);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.ess-info{flex:1}
+.ess-name{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--text);line-height:1.2}
+.ess-sub{font-size:0.7rem;font-weight:400;color:var(--text-m);margin-top:2px;font-style:italic}
+.ess-arrow{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;color:var(--text-m);font-size:0.6rem;transition:all 0.3s;flex-shrink:0}
+.ess-card.open .ess-arrow{background:var(--terra);border-color:var(--terra);color:var(--white);transform:rotate(180deg)}
+.ess-body{display:none;padding:0 20px 20px}
+.ess-card.open .ess-body{display:block}
+.ess-rule{height:1px;background:linear-gradient(90deg,transparent,var(--border-terra),transparent);margin-bottom:16px}
+.ess-item{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.04);align-items:flex-start}
+.ess-item:last-child{border-bottom:none}
+.ess-dot{width:5px;height:5px;border-radius:50%;background:var(--terra);flex-shrink:0;margin-top:7px}
+.ess-text{font-size:0.86rem;line-height:1.65;color:var(--text-l);font-weight:300}
+.ess-text strong{color:var(--text);font-weight:500;display:block;margin-bottom:1px;font-size:0.88rem}
+
+/* Days */
+.days-list{padding:0 16px}
+.day-card{margin-bottom:10px;border-radius:14px;overflow:hidden;background:var(--white);border:1px solid var(--border);box-shadow:var(--shadow);transition:border-color 0.3s;animation:cardUp 0.5s ease-out both}
+.day-card.open{border-color:var(--terra-l)}
+.day-trigger{width:100%;background:none;border:none;padding:18px 20px;cursor:pointer;display:flex;align-items:center;gap:14px;text-align:left}
+.day-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--terra-p);line-height:1;min-width:40px;transition:color 0.3s}
+.day-card.open .day-num{color:var(--terra)}
+.day-info{flex:1}
+.day-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--text);line-height:1.2;margin-bottom:3px}
+.day-focus{font-size:0.7rem;font-weight:400;color:var(--text-m);font-style:italic}
+.day-weekday{font-size:0.58rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--terra-l);margin-top:4px}
+.day-badge{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.day-check-count{font-size:0.58rem;font-weight:600;color:var(--text-m);letter-spacing:0.08em}
+.day-arrow{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;color:var(--text-m);font-size:0.6rem;transition:all 0.3s;flex-shrink:0}
+.day-card.open .day-arrow{background:var(--terra);border-color:var(--terra);color:var(--white);transform:rotate(180deg)}
+.day-body{display:none;padding:0 16px 20px}
+.day-card.open .day-body{display:block}
+.day-divider{height:1px;background:linear-gradient(90deg,transparent,var(--border-terra),transparent);margin-bottom:16px}
+.day-notes-only{padding:4px 0 8px}
+.day-notes-only p{font-size:0.86rem;color:var(--text-l);font-style:italic;line-height:1.65;margin-bottom:14px}
+
+/* Stops */
+.stop{margin-bottom:7px;border-radius:11px;background:var(--cream);border:1px solid rgba(0,0,0,0.05);overflow:hidden;transition:border-color 0.2s}
+.stop.checked{background:rgba(196,96,58,0.06);border-color:rgba(196,96,58,0.2)}
+.stop-header{display:flex;align-items:center;gap:13px;padding:13px 15px;cursor:pointer}
+.stop-check{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--terra-l);background:transparent;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all 0.25s;cursor:pointer}
+.stop-check::after{content:'\2713';font-size:0.62rem;color:var(--white);opacity:0;transition:opacity 0.2s;font-weight:700}
+.stop.checked .stop-check{background:var(--terra);border-color:var(--terra);box-shadow:0 0 12px rgba(196,96,58,0.3)}
+.stop.checked .stop-check::after{opacity:1}
+.stop-name{flex:1;font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:600;color:var(--text);line-height:1.2;transition:color 0.2s}
+.stop.checked .stop-name{color:var(--text-m);text-decoration:line-through;text-decoration-color:rgba(196,96,58,0.35)}
+.stop-expand{font-size:0.52rem;color:var(--text-m);letter-spacing:0.1em;flex-shrink:0}
+.stop-details{display:none;padding:0 15px 15px 50px;animation:slideDown 0.2s ease-out}
+.stop-details.open{display:block}
+@keyframes slideDown{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:translateY(0)}}
+.detail-rule{height:1px;background:rgba(0,0,0,0.05);margin-bottom:13px}
+.detail-block{margin-bottom:11px}
+.detail-label{font-size:0.56rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;display:block;margin-bottom:5px}
+.detail-label.hist{color:var(--text-m)}
+.detail-label.fact{color:var(--terra)}
+.detail-text{font-size:0.86rem;line-height:1.65;color:var(--text-l);font-weight:300}
+.map-btn{display:inline-flex;align-items:center;gap:6px;margin-top:13px;padding:8px 15px;background:transparent;border:1px solid var(--border-terra);border-radius:8px;color:var(--terra);font-size:0.7rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s;margin-right:8px}
+.map-btn:active{background:rgba(196,96,58,0.1)}
+
+/* Eat block */
+.eat-block{margin-top:14px;border-radius:11px;background:rgba(196,96,58,0.04);border:1px solid rgba(196,96,58,0.12);overflow:hidden}
+.eat-header{padding:11px 15px;display:flex;align-items:center;gap:10px;cursor:pointer}
+.eat-title{font-size:0.58rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--terra);flex:1}
+.eat-arrow{font-size:0.55rem;color:var(--text-m);transition:transform 0.3s}
+.eat-block.open .eat-arrow{transform:rotate(180deg)}
+.eat-body{display:none;padding:0 15px 13px}
+.eat-block.open .eat-body{display:block}
+.eat-rule{height:1px;background:rgba(196,96,58,0.1);margin-bottom:11px}
+.eat-item{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid rgba(0,0,0,0.04);align-items:flex-start}
+.eat-item:last-child{border-bottom:none}
+.eat-emoji{font-size:0.92rem;flex-shrink:0;padding-top:1px}
+.eat-text{font-size:0.83rem;line-height:1.5;color:var(--text-l);font-weight:300}
+.eat-text strong{color:var(--text);font-weight:500;display:block;margin-bottom:1px}
+.eat-where{font-size:0.73rem;color:var(--text-m);font-style:italic;margin-top:2px;display:block;text-decoration:none}
+
+/* Notes */
+.notes-wrap{margin-top:14px}
+.notes-label{font-size:0.56rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-m);margin-bottom:7px;display:block}
+.notes-area{width:100%;background:var(--white);border:1px solid var(--border);border-radius:9px;padding:12px;color:var(--text);font-family:'DM Sans',sans-serif;font-size:0.86rem;font-weight:300;line-height:1.6;resize:none;outline:none;min-height:76px;transition:border-color 0.2s}
+.notes-area::placeholder{color:rgba(168,144,128,0.5)}
+.notes-area:focus{border-color:var(--terra)}
+
+/* GTK */
+.gtk-grid{padding:16px 16px 0;display:flex;flex-direction:column}
+.gtk-card{border-radius:14px;background:var(--white);border:1px solid var(--border);overflow:hidden;margin-bottom:10px;box-shadow:var(--shadow)}
+.gtk-card.open{border-color:var(--terra-l)}
+.gtk-trigger{width:100%;background:none;border:none;padding:17px 20px;cursor:pointer;display:flex;align-items:center;gap:13px;text-align:left}
+.gtk-emoji{width:36px;height:36px;border-radius:10px;background:var(--terra-faint);border:1px solid var(--border-terra);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.gtk-info{flex:1}
+.gtk-title{font-family:'Cormorant Garamond',serif;font-size:1.18rem;font-weight:600;color:var(--text);line-height:1.2}
+.gtk-sub{font-size:0.68rem;color:var(--text-m);font-style:italic;margin-top:2px}
+.gtk-arrow{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,0.1);display:flex;align-items:center;justify-content:center;color:var(--text-m);font-size:0.6rem;transition:all 0.3s;flex-shrink:0}
+.gtk-card.open .gtk-arrow{background:var(--terra);border-color:var(--terra);color:var(--white);transform:rotate(180deg)}
+.gtk-body{display:none;padding:0 20px 18px}
+.gtk-card.open .gtk-body{display:block}
+.gtk-rule{height:1px;background:linear-gradient(90deg,transparent,var(--border-terra),transparent);margin-bottom:14px}
+.gtk-item{display:flex;gap:12px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.04);align-items:flex-start}
+.gtk-item:last-child{border-bottom:none}
+.gtk-dot{width:5px;height:5px;border-radius:50%;background:var(--terra);flex-shrink:0;margin-top:7px}
+.gtk-text{font-size:0.86rem;line-height:1.65;color:var(--text-l);font-weight:300}
+.gtk-text strong{color:var(--text);font-weight:500;display:block;margin-bottom:1px}
+
+/* Phrases */
+.phrases-list{padding:16px 16px 0}
+.phrase-card{margin-bottom:8px;border-radius:11px;background:var(--white);border:1px solid var(--border);padding:14px 16px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow)}
+.phrase-content{flex:1}
+.phrase-fr{font-family:'Cormorant Garamond',serif;font-size:1.08rem;font-weight:600;color:var(--text);line-height:1.3}
+.phrase-pt{font-size:0.78rem;color:var(--text-m);margin-top:2px}
+.phrase-meaning{font-size:0.72rem;color:var(--terra);font-style:italic;margin-top:3px}
+.speak-btn{width:34px;height:34px;min-width:34px;border-radius:50%;border:1px solid var(--border);background:var(--cream);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:0.9rem;transition:all 0.2s;color:var(--terra)}
+.speak-btn:active{background:var(--terra);color:var(--white);border-color:var(--terra)}
+
+/* Hero deck */
+.quick-shell{padding:0 16px;margin-top:-72px;position:relative;z-index:5}
+.command-deck{background:rgba(253,248,238,0.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.8);box-shadow:0 16px 40px rgba(44,32,24,0.10);border-radius:28px;padding:22px 18px;overflow:hidden;position:relative}
+.command-deck::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 0% 0%,rgba(196,96,58,0.05) 0%,transparent 60%),radial-gradient(ellipse at 100% 100%,rgba(44,32,24,0.04) 0%,transparent 60%);pointer-events:none;border-radius:28px}
+.deck-title{font-family:'Cormorant Garamond',serif;font-size:1.95rem;font-weight:400;line-height:1.1;color:var(--text);margin-bottom:10px;position:relative;z-index:1}
+.deck-title em{font-style:italic;color:var(--terra)}
+.deck-text{font-size:0.88rem;line-height:1.6;color:var(--text-l);max-width:38ch;position:relative;z-index:1}
+.deck-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:12px;margin-top:20px;position:relative;z-index:1}
+.today-card,.micro-card{background:rgba(255,255,255,0.9);border:1px solid var(--border);border-radius:20px;padding:16px;box-shadow:0 1px 8px rgba(44,32,24,0.06)}
+.today-card{display:flex;flex-direction:column;justify-content:space-between;min-height:170px}
+.today-label,.micro-label{font-size:0.58rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--terra);margin-bottom:8px}
+.today-name{font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;line-height:1.15;color:var(--text);margin-bottom:6px}
+.today-meta{font-size:0.78rem;line-height:1.5;color:var(--text-l);font-style:italic}
+.today-action{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;padding:10px 14px;background:var(--terra);color:var(--white);text-decoration:none;border-radius:14px;font-size:0.72rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;transition:background 0.2s}
+.today-action:active{background:var(--stone)}
+.micro-stack{display:flex;flex-direction:column;gap:12px}
+.micro-card{min-height:79px;display:flex;flex-direction:column;justify-content:center}
+.micro-value{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:500;color:var(--text);line-height:1;margin-bottom:4px}
+.micro-sub{font-size:0.72rem;line-height:1.4;color:var(--text-l)}
+.jump-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px;position:relative;z-index:1}
+.jump-card{background:#fff;border:1px solid rgba(196,96,58,0.18);border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-decoration:none;color:var(--text);font-size:0.64rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;min-height:76px;transition:transform 0.15s,border-color 0.15s}
+.jump-card:active{transform:scale(0.97);border-color:var(--terra-l)}
+.jump-icon{font-size:1.1rem;color:var(--terra);font-weight:400}
+.jump-label{line-height:1.15;text-align:center;color:var(--text-m)}
+
+/* Bottom dock */
+.dock{position:fixed;left:12px;right:12px;bottom:12px;z-index:1200;background:rgba(255,255,255,0.9);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,0.75);border-radius:22px;box-shadow:0 18px 36px rgba(44,32,24,0.12);padding:8px;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.dock a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-radius:15px;padding:8px 4px;color:var(--text-m);text-decoration:none;font-size:0.58rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;min-height:52px;transition:all 0.15s}
+.dock a.active{background:var(--terra-faint);color:var(--stone)}
+.dock a:active{transform:scale(0.95)}
+.dock .dock-icon{font-size:0.95rem;color:var(--terra)}
+
+/* Completion */
+.completion-msg{text-align:center;padding:36px 24px;display:none}
+.completion-msg.show{display:block}
+.completion-msg h2{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--terra);font-style:italic;margin-bottom:8px}
+.completion-msg p{font-size:0.78rem;color:var(--text-m);letter-spacing:0.05em;line-height:1.7}
+.footer{text-align:center;padding:52px 24px 32px;color:rgba(168,144,128,0.4);font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;line-height:2}
+
+/* Checklist */
+.checklist-wrap{padding:0 16px}
+.checklist-counter{text-align:center;font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--terra);font-style:italic;margin-bottom:16px}
+.cl-item{display:flex;align-items:center;gap:13px;padding:12px 16px;margin-bottom:6px;border-radius:11px;background:var(--cream);border:1px solid rgba(0,0,0,0.05);cursor:pointer;transition:all 0.2s}
+.cl-item.checked{background:rgba(196,96,58,0.06);border-color:rgba(196,96,58,0.2)}
+.cl-check{width:20px;height:20px;border-radius:50%;border:1.5px solid var(--terra-l);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all 0.25s}
+.cl-check::after{content:'\2713';font-size:0.6rem;color:var(--white);opacity:0;transition:opacity 0.2s;font-weight:700}
+.cl-item.checked .cl-check{background:var(--terra);border-color:var(--terra);box-shadow:0 0 10px rgba(196,96,58,0.3)}
+.cl-item.checked .cl-check::after{opacity:1}
+.cl-name{flex:1;font-family:'Cormorant Garamond',serif;font-size:1.02rem;font-weight:600;color:var(--text);line-height:1.2;transition:all 0.2s}
+.cl-item.checked .cl-name{color:var(--text-m);text-decoration:line-through;text-decoration-color:rgba(196,96,58,0.35)}
+.cl-area{font-size:0.65rem;color:var(--text-m);letter-spacing:0.08em;flex-shrink:0}
+.cl-map{font-size:0.65rem;color:var(--terra);text-decoration:none;flex-shrink:0;opacity:0.7}
+
+/* DARK THEME */
+body.dark{background:var(--ink);color:var(--cream)}
+body.dark .cover{background:var(--ink)}
+body.dark .section-title{color:var(--cream)}
+body.dark .section-intro-text{color:rgba(245,232,200,0.5)}
+body.dark .section-rule{background:linear-gradient(90deg,transparent,rgba(196,96,58,0.2),transparent)}
+body.dark .command-deck{background:rgba(30,21,8,0.72);border-color:rgba(255,255,255,0.08);box-shadow:0 16px 40px rgba(0,0,0,0.3)}
+body.dark .today-card,body.dark .micro-card{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.07);box-shadow:none}
+body.dark .deck-title,body.dark .today-name,body.dark .micro-value{color:var(--cream)}
+body.dark .deck-text,body.dark .today-meta,body.dark .micro-sub{color:rgba(245,232,200,0.6)}
+body.dark .jump-card{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.07);color:var(--cream)}
+body.dark .jump-label{color:rgba(245,232,200,0.5)}
+body.dark .today-action{background:var(--terra)}
+body.dark .dock{background:rgba(30,21,8,0.9);border-color:rgba(255,255,255,0.08);box-shadow:0 18px 36px rgba(0,0,0,0.4)}
+body.dark .dock a{color:rgba(245,232,200,0.5)}
+body.dark .dock a.active{background:rgba(196,96,58,0.14);color:var(--terra-l)}
+body.dark .ess-card,body.dark .day-card,body.dark .gtk-card,body.dark .phrase-card{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.07);box-shadow:none}
+body.dark .ess-card.open,body.dark .day-card.open,body.dark .gtk-card.open{border-color:var(--border-terra)}
+body.dark .ess-name,body.dark .day-name,body.dark .gtk-title,body.dark .phrase-fr{color:var(--cream)}
+body.dark .ess-sub,body.dark .day-focus,body.dark .gtk-sub,body.dark .phrase-pt{color:rgba(245,232,200,0.5)}
+body.dark .ess-arrow,body.dark .day-arrow,body.dark .gtk-arrow{border-color:rgba(255,255,255,0.1);color:rgba(245,232,200,0.4)}
+body.dark .ess-card.open .ess-arrow,body.dark .day-card.open .day-arrow,body.dark .gtk-card.open .gtk-arrow{background:var(--terra);border-color:var(--terra);color:var(--ink)}
+body.dark .ess-text,body.dark .gtk-text,body.dark .detail-text{color:rgba(245,232,200,0.7)}
+body.dark .ess-text strong,body.dark .gtk-text strong{color:var(--cream)}
+body.dark .stop{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.05)}
+body.dark .stop.checked{background:rgba(196,96,58,0.05);border-color:rgba(196,96,58,0.18)}
+body.dark .stop-check{border-color:rgba(255,255,255,0.18)}
+body.dark .stop-name{color:var(--cream)}
+body.dark .stop.checked .stop-name{color:rgba(245,232,200,0.5)}
+body.dark .detail-rule{background:rgba(255,255,255,0.05)}
+body.dark .map-btn{border-color:var(--border-terra);color:var(--terra-l)}
+body.dark .eat-block{background:rgba(196,96,58,0.04);border-color:rgba(196,96,58,0.12)}
+body.dark .eat-text{color:rgba(245,232,200,0.72)}
+body.dark .eat-text strong{color:var(--cream)}
+body.dark .eat-where{color:rgba(245,232,200,0.5)}
+body.dark .notes-area{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.07);color:var(--cream)}
+body.dark .notes-label{color:rgba(245,232,200,0.4)}
+body.dark .notes-area::placeholder{color:rgba(245,232,200,0.25)}
+body.dark .day-weekday{color:rgba(196,96,58,0.45)}
+body.dark .day-num{color:rgba(196,96,58,0.2)}
+body.dark .day-card.open .day-num{color:var(--terra)}
+body.dark .day-notes-only p{color:rgba(245,232,200,0.5)}
+body.dark .ctrl-btn{color:rgba(232,192,122,0.5);border-color:rgba(232,192,122,0.3)}
+body.dark .ctrl-btn.active{background:var(--terra);color:var(--ink)}
+body.dark .lang-group{background:rgba(30,21,8,0.9);border-color:rgba(232,192,122,0.2)}
+body.dark .theme-btn{background:rgba(30,21,8,0.9);border-color:rgba(232,192,122,0.2);color:var(--cream)}
+body.dark .cl-item{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.05)}
+body.dark .cl-item.checked{background:rgba(196,96,58,0.06)}
+body.dark .cl-check{border-color:rgba(255,255,255,0.18)}
+body.dark .cl-name{color:var(--cream)}
+body.dark .cl-item.checked .cl-name{color:rgba(245,232,200,0.5)}
+body.dark .checklist-counter{color:var(--terra-l)}
+body.dark .completion-msg h2{color:var(--terra-l)}
+body.dark .footer{color:rgba(245,232,200,0.2)}
+body.dark .speak-btn{background:rgba(255,255,255,0.025);border-color:rgba(255,255,255,0.07)}
+
+@media(max-width:640px){
+  .deck-grid{grid-template-columns:1fr}
+  .today-card{min-height:auto}
+  .jump-grid{grid-template-columns:repeat(2,1fr)}
+  .quick-shell{margin-top:-60px}
+  .deck-title{font-size:1.7rem}
+}
+</style>
+</head>
+<body>
+
+<div class="top-controls">
+  <div class="lang-group">
+    <button class="ctrl-btn lang-btn active" id="btnEN" onclick="setLang('en')">EN</button>
+    <button class="ctrl-btn lang-btn" id="btnPT" onclick="setLang('pt')">PT</button>
+  </div>
+  <button class="ctrl-btn theme-btn" onclick="toggleTheme()" id="themeBtn">☾</button>
+</div>
+
+<!-- COVER -->
+<div class="cover" id="top">
+  <div class="cover-stars" id="coverStars"></div>
+  <div class="cover-fleur">🥐🍷</div>
+  <h1 class="cover-title" data-en="Vivi's Paris <em>Rendez-vous</em>" data-pt="O <em>Rendez-vous</em> Parisiense da Vivi">Vivi's Paris <em>Rendez-vous</em></h1>
+  <p class="cover-author" data-en="by Claudio SAROLDI" data-pt="por Claudio SAROLDI">by Claudio SAROLDI</p>
+  <div class="cover-rule"></div>
+  <div class="cover-dates" data-en="19 — 25 MAY 2026" data-pt="19 — 25 MAIO 2026">19 — 25 MAY 2026</div>
+  <div class="cover-scroll">↓</div>
+</div>
+
+<!-- HERO DECK -->
+<div class="quick-shell">
+  <div class="command-deck">
+    <div class="deck-title" data-en="Paris, <em>at a glance</em>." data-pt="Paris, <em>num piscar de olhos</em>.">Paris, <em>at a glance</em>.</div>
+    <p class="deck-text" data-en="Your week in Paris starts here. Check today's plan, track your progress, and jump straight to what you need." data-pt="A sua semana em Paris comeca aqui. Veja o plano de hoje, acompanhe o progresso e va direto para o que precisar.">Your week in Paris starts here.</p>
+    <div class="deck-grid">
+      <div class="today-card">
+        <div>
+          <div class="today-label" data-en="Start here" data-pt="Comece aqui">Start here</div>
+          <div class="today-name" id="todayTitle">Day 1 · Arrival</div>
+          <div class="today-meta" id="todayMeta">Paris is waiting.</div>
+        </div>
+        <a href="#day1" class="today-action" id="todayAction" data-en="Open today's plan" data-pt="Abrir plano de hoje">Open today's plan</a>
+      </div>
+      <div class="micro-stack">
+        <div class="micro-card">
+          <div class="micro-label" data-en="Your list" data-pt="Sua lista">Your list</div>
+          <div class="micro-value" id="heroProgress">0 / 0</div>
+          <div class="micro-sub" id="heroProgressSub" data-en="Your list is waiting." data-pt="A sua lista esta esperando.">Your list is waiting.</div>
+        </div>
+        <div class="micro-card">
+          <div class="micro-label" data-en="Countdown" data-pt="Contagem">Countdown</div>
+          <div class="micro-value" id="heroCountdown">—</div>
+          <div class="micro-sub" id="heroCountdownSub" data-en="Until Paris." data-pt="Ate Paris.">Until Paris.</div>
+        </div>
+      </div>
+    </div>
+    <div class="jump-grid">
+      <a href="#essentials" class="jump-card" data-dock="essentials"><span class="jump-icon">🗺️</span><span class="jump-label" data-en="Before You Go" data-pt="Antes de Ir">Before You Go</span></a>
+      <a href="#itinerary" class="jump-card" data-dock="itinerary"><span class="jump-icon">📅</span><span class="jump-label" data-en="The Days" data-pt="Os Dias">The Days</span></a>
+      <a href="#insider" class="jump-card" data-dock="insider"><span class="jump-icon">💡</span><span class="jump-label" data-en="Good to Know" data-pt="Bom Saber">Good to Know</span></a>
+      <a href="#phrases" class="jump-card" data-dock="phrases"><span class="jump-icon">🗣️</span><span class="jump-label" data-en="French" data-pt="Francês">French</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ BEFORE YOU GO ═══ -->
+<div class="section-rule"></div>
+<div class="section-header" id="essentials">
+  <div class="section-tag" data-en="The Practical Stuff" data-pt="O Lado Prático">The Practical Stuff</div>
+  <h2 class="section-title" data-en="Before You <em>Go</em>" data-pt="Antes de <em>Ir</em>">Before You <em>Go</em></h2>
+  <p class="section-intro-text" data-en="Everything you need to know before you land in Paris." data-pt="Tudo que voce precisa saber antes de chegar em Paris.">Everything you need to know.</p>
+</div>
+<div class="essentials-list">
+
+  <div class="ess-card" id="ess1"><button class="ess-trigger" onclick="toggleEss('ess1')"><div class="ess-icon">🏨</div><div class="ess-info"><div class="ess-name" data-en="Your Hotel" data-pt="Seu Hotel">Your Hotel</div><div class="ess-sub" data-en="Ibis Styles Paris 15 Lecourbe" data-pt="Ibis Styles Paris 15 Lecourbe">Ibis Styles Paris 15 Lecourbe</div></div><div class="ess-arrow">▼</div></button>
+  <div class="ess-body"><div class="ess-rule"></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="15th arrondissement — southwest Paris" data-pt="15° arrondissement — sudoeste de Paris">15th arrondissement — southwest Paris</strong><span data-en="Excellent location. You are walking distance from the Eiffel Tower and Campo de Marte. The 15th is a calm, residential Parisian neighbourhood — very few tourists, great bakeries, local cafés." data-pt="Localização excelente. A distancia a pe da Torre Eiffel e do Campo de Marte. O 15° e um bairro parisiense tranquilo e residencial — poucos turistas, ótimas padarias, cafes locais.">Excellent location, walking distance from the Eiffel Tower.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Nearest Métro: Lecourbe (Line 6)" data-pt="Metrô mais proximo: Lecourbe (Linha 6)">Nearest Métro: Lecourbe (Line 6)</strong><span data-en="Line 6 runs above ground between Bir-Hakeim and Nation and gives you spectacular elevated views of the Eiffel Tower from the train. One of the best free views in Paris." data-pt="A linha 6 corre acima do solo entre Bir-Hakeim e Nation e da vistas elevadas espetaculares da Torre Eiffel de dentro do trem. Uma das melhores vistas gratuitas de Paris.">Line 6 gives Eiffel Tower views from the train — a free highlight.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="RER C is your friend for Versailles" data-pt="O RER C e seu amigo para Versalhes">RER C for Versailles</strong><span data-en="Champ de Mars — Tour Eiffel station (RER C) is about 15 minutes walk from the hotel. This is your direct line to Versailles — no changes needed." data-pt="A estação Champ de Mars — Tour Eiffel (RER C) fica a cerca de 15 minutos a pe do hotel. Essa e sua linha direta para Versalhes — sem baldeação.">Champ de Mars RER C station is 15 min walk — direct to Versailles.</span></div></div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Ibis+Styles+Paris+15+Lecourbe" class="map-btn" target="_blank" data-en="📍 Show Hotel" data-pt="📍 Ver Hotel">📍 Show Hotel</a>
+  </div></div>
+
+  <div class="ess-card" id="ess2"><button class="ess-trigger" onclick="toggleEss('ess2')"><div class="ess-icon">🚇</div><div class="ess-info"><div class="ess-name" data-en="Getting Around" data-pt="Como se Locomover">Getting Around</div><div class="ess-sub" data-en="Métro, RER, and on foot" data-pt="Metrô, RER e a pe">Métro, RER, and on foot</div></div><div class="ess-arrow">▼</div></button>
+  <div class="ess-body"><div class="ess-rule"></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Get a Navigo Easy card immediately" data-pt="Pegue um cartão Navigo Easy imediatamente">Get a Navigo Easy card immediately</strong><span data-en="Available at any Métro station. Covers Métro, RER, bus, and the RER C to Versailles. Load a carnet of 10 trips or a weekly pass. Use the Bonjour RATP app to navigate." data-pt="Disponivel em qualquer estação de metrô. Cobre Metrô, RER, ônibus e o RER C para Versalhes. Carregue com 10 viagens ou um passe semanal. Use o app Bonjour RATP para navegar.">Navigo Easy card at any Métro station. Use Bonjour RATP app.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Disney: RER A from Châtelet-Les Halles" data-pt="Disney: RER A a partir de Châtelet-Les Halles">Disney: RER A from Châtelet-Les Halles</strong><span data-en="Take the Métro to Châtelet-Les Halles, then RER A direction Marne-la-Vallée / Chessy. Journey takes about 40 minutes and drops you at the park gates. Leave by 8:30am." data-pt="Pegue o Metrô até Châtelet-Les Halles, depois o RER A sentido Marne-la-Vallée / Chessy. Cerca de 40 minutos e te deixa na porta do parque. Saia às 8h30.">RER A from Châtelet, 40 min to Disney gates. Leave 8:30am.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Versailles: RER C from Champ de Mars" data-pt="Versalhes: RER C a partir do Champ de Mars">Versailles: RER C from Champ de Mars</strong><span data-en="Direction Versailles-Château Rive Gauche. About 35 minutes. Covered by Navigo pass. Leave Paris by 9am — Versailles gets extremely busy by 11am." data-pt="Sentido Versailles-Château Rive Gauche. Cerca de 35 minutos. Coberto pelo passe Navigo. Saia de Paris às 9h — Versalhes fica extremamente movimentado a partir das 11h.">Direction Versailles-Château Rive Gauche. 35 min. Leave 9am.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Paris is a walking city — use your feet" data-pt="Paris e uma cidade para caminhar — use seus pes">Paris is a walking city</strong><span data-en="Many of the main sights are closer than they look. The walk from the Louvre to the Eiffel Tower takes about 50 minutes and passes through the Tuileries and Champ de Mars. Do it." data-pt="Muitos dos principais pontos turísticos são mais próximos do que parecem. A caminhada do Louvre até a Torre Eiffel leva cerca de 50 minutos e passa pelas Tulherias e pelo Campo de Marte.">Louvre to Eiffel Tower: 50 min walk. Do it.</span></div></div>
+  </div></div>
+
+  <div class="ess-card" id="ess3"><button class="ess-trigger" onclick="toggleEss('ess3')"><div class="ess-icon">🎫</div><div class="ess-info"><div class="ess-name" data-en="Book in Advance" data-pt="Reserve com Antecedência">Book in Advance</div><div class="ess-sub" data-en="Non-negotiable list" data-pt="Lista nao negociavel">Non-negotiable list</div></div><div class="ess-arrow">▼</div></button>
+  <div class="ess-body"><div class="ess-rule"></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Eiffel Tower — book summit weeks ahead" data-pt="Torre Eiffel — reserve o topo com semanas de antecedência">Eiffel Tower — book summit weeks ahead</strong><span data-en="Walk-in queues can be 2-3 hours long. Pre-book timed entry at toureiffel.paris. The second floor view is honestly better than the summit on a hazy day." data-pt="Filas sem reserva podem durar 2-3 horas. Reserve com horário em toureiffel.paris. A vista do segundo andar e honestamente melhor que o topo em dias com neblina.">Timed entry at toureiffel.paris. Queue without = 2-3 hours.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Louvre — pre-book timed entry" data-pt="Louvre — reserve horário com antecedência">Louvre — pre-book timed entry</strong><span data-en="Book at louvre.fr. Focus on the Denon Wing only: Winged Victory, Venus de Milo, Mona Lisa. That alone is 3 hours. The Louvre is closed on Tuesdays." data-pt="Reserve em louvre.fr. Foque só na Ala Denon: Vitória de Samotrácia, Vênus de Milo, Mona Lisa. Só isso já são 3 horas. O Louvre fecha às terças.">louvre.fr — Denon Wing only. 3 hours. Closed Tuesdays.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Versailles — essential to pre-book" data-pt="Versalhes — essencial reservar antes">Versailles — essential to pre-book</strong><span data-en="On-the-day queues can exceed 2 hours. Book at chateauversailles.fr. Closed on Mondays." data-pt="Filas no dia podem ultrapassar 2 horas. Reserve em chateauversailles.fr. Fecha às segundas.">chateauversailles.fr — on-the-day queues 2+ hours. Closed Mondays.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Notre-Dame — free but timed entry required" data-pt="Notre-Dame — gratuita mas com horário obrigatório">Notre-Dame — free, timed entry required</strong><span data-en="Reopened December 2024 after the fire, beautifully restored. Book free timed entry on the official site. The interior is stunning." data-pt="Reaberta em dezembro de 2024 após o incêndio, lindamente restaurada. Reserve horário gratuito no site oficial. O interior é deslumbrante.">Free. Book timed entry. Reopened Dec 2024.</span></div></div>
+  </div></div>
+
+  <div class="ess-card" id="ess4"><button class="ess-trigger" onclick="toggleEss('ess4')"><div class="ess-icon">💶</div><div class="ess-info"><div class="ess-name" data-en="Money and Practicalities" data-pt="Dinheiro e Praticidades">Money and Practicalities</div><div class="ess-sub" data-en="The honest version" data-pt="A versao honesta">The honest version</div></div><div class="ess-arrow">▼</div></button>
+  <div class="ess-body"><div class="ess-rule"></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Free drinking water everywhere" data-pt="Água potável gratuita em todo lugar">Free drinking water everywhere</strong><span data-en="The dark green Wallace Fountains dotted around Paris provide free, cold, clean drinking water. Over 100 across the city. No need to buy bottled water." data-pt="As Fontes Wallace verde-escuras espalhadas por Paris oferecem água potável gratuita e fria. Mais de 100 pela cidade. Não precisa comprar água engarrafada.">Wallace Fountains — free cold water. 100+ across Paris.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Free rooftop view: Galeries Lafayette Haussmann" data-pt="Vista gratuita no terraço: Galeries Lafayette Haussmann">Free view: Galeries Lafayette rooftop</strong><span data-en="Take the lift to the top floor. Completely free, no purchase required. Panoramic view over the Opéra and the Eiffel Tower. One of the best free views in Paris." data-pt="Suba de elevador até o último andar. Totalmente gratuito, sem compra necessária. Vista panorâmica sobre a Ópera e a Torre Eiffel. Uma das melhores vistas gratuitas de Paris.">Lift to top floor — free, stunning view over Opéra and Eiffel Tower.</span></div></div>
+    <div class="ess-item"><div class="ess-dot"></div><div class="ess-text"><strong data-en="Do not eat directly next to landmarks" data-pt="Não coma diretamente ao lado dos pontos turísticos">Do not eat next to landmarks</strong><span data-en="Restaurants immediately next to the Eiffel Tower, Louvre, and Notre-Dame are almost universally mediocre and overpriced. Walk two streets in any direction and quality rises immediately." data-pt="Restaurantes imediatamente ao lado da Torre Eiffel, Louvre e Notre-Dame são quase todos medíocres e caros. Ande duas ruas em qualquer direção e a qualidade sobe imediatamente.">Two streets away from any landmark = better food, lower prices.</span></div></div>
+  </div></div>
+
+</div>
+
+<!-- ═══ ITINERARY ═══ -->
+<div class="section-rule"></div>
+<div class="section-header" id="itinerary">
+  <div class="section-tag" data-en="19 — 25 May 2026" data-pt="19 — 25 Maio 2026">19 — 25 May 2026</div>
+  <h2 class="section-title" data-en="The <em>Days</em>" data-pt="Os <em>Dias</em>">The <em>Days</em></h2>
+  <p class="section-intro-text" data-en="Seven days in the most beautiful city in the world." data-pt="Sete dias na cidade mais bonita do mundo.">Seven days in the most beautiful city in the world.</p>
+</div>
+<div class="days-list">
+
+  <!-- DAY 1: ARRIVAL -->
+  <div class="day-card" id="day1"><button class="day-trigger" onclick="toggleDay('day1')"><span class="day-num">01</span><div class="day-info"><div class="day-name" data-en="Arriving in Paris" data-pt="Chegando em Paris">Arriving in Paris</div><div class="day-focus" data-en="From London, check in, breathe" data-pt="De Londres, check-in, respire">From London, check in, breathe</div><div class="day-weekday" data-en="Tuesday, 19 May" data-pt="Terça-feira, 19 de Maio">Tuesday, 19 May</div></div><div class="day-badge"><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+      <div class="day-notes-only"><p data-en="You are coming from London on the 19th — a travel day, not an itinerary day. Check in to the Ibis Styles Paris 15 Lecourbe, drop your bags, and go for a walk. The Eiffel Tower is close enough to see from nearby streets. Do not plan too much. The city will introduce itself." data-pt="Você vem de Londres no dia 19 — um dia de viagem, não de roteiro. Check-in no Ibis Styles Paris 15 Lecourbe, deixe as malas e saia para caminhar. A Torre Eiffel fica perto o suficiente para ver nas ruas próximas. Não planeje demais. A cidade vai se apresentar.">Travel day from London. Check in, drop bags, go for a walk. The Eiffel Tower is nearby. Let the city introduce itself.</p></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="Flight details, arrival time, first impressions..." data-placeholder-pt="Detalhes do voo, horário de chegada, primeiras impressões..." data-day="1" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 2: EIFFEL TOWER AREA -->
+  <div class="day-card" id="day2"><button class="day-trigger" onclick="toggleDay('day2')"><span class="day-num">02</span><div class="day-info"><div class="day-name" data-en="The Iron Lady" data-pt="A Dama de Ferro">The Iron Lady</div><div class="day-focus" data-en="Eiffel Tower area — all within walking distance" data-pt="Área da Torre Eiffel — tudo a pé">Eiffel Tower area — all within walking distance</div><div class="day-weekday" data-en="Wednesday, 20 May" data-pt="Quarta-feira, 20 de Maio">Wednesday, 20 May</div></div><div class="day-badge"><span class="day-check-count" id="day2-count"></span><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+
+      <div class="stop" id="s2_1"><div class="stop-header" onclick="toggleStop('s2_1')"><div class="stop-check" onclick="checkStop(event,'s2_1')"></div><div class="stop-name" data-en="Pont de Bir-Hakeim" data-pt="Ponte Bir-Hakeim">Pont de Bir-Hakeim</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="A two-level bridge over the Seine — trains run on the upper level, pedestrians and cyclists on the lower. Built in 1905, it is one of the most photogenic spots in Paris, often used in films." data-pt="Uma ponte de dois níveis sobre o Sena — trens circulam no nível superior, pedestres e ciclistas no inferior. Construída em 1905, é um dos pontos mais fotogênicos de Paris, muito usada em filmes.">Two-level bridge, trains above, pedestrians below. Built 1905. Incredibly photogenic.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The bridge featured prominently in Inception (2010) — the scene where the city folds on itself was filmed here. Also appears in Last Tango in Paris and several other classics." data-pt="A ponte aparece de forma marcante em A Origem (2010) — a cena onde a cidade se dobra sobre si mesma foi filmada aqui. Também aparece em Último Tango em Paris e vários outros clássicos.">Featured in Inception (2010) — the folding city scene was filmed here.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Pont+de+Bir-Hakeim+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s2_2"><div class="stop-header" onclick="toggleStop('s2_2')"><div class="stop-check" onclick="checkStop(event,'s2_2')"></div><div class="stop-name" data-en="Trocadéro" data-pt="Trocadéro">Trocadéro</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The Trocadéro gardens sit on a hill directly opposite the Eiffel Tower, separated by the Seine. The view from here — across the reflecting pools to the tower — is the most reproduced image of Paris in the world." data-pt="Os jardins do Trocadéro ficam em uma colina diretamente em frente à Torre Eiffel, separados pelo Sena. A vista daqui — sobre os espelhos d'água até a torre — é a imagem de Paris mais reproduzida no mundo.">The most photographed view in Paris. Every photo you have ever seen was taken from here.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Go in the afternoon so the light falls directly on the tower face. The Palais de Chaillot behind you has a free rooftop terrace with a different angle on the tower — worth climbing." data-pt="Vá à tarde para que a luz bata diretamente na fachada da torre. O Palais de Chaillot atrás de você tem um terraço gratuito com um ângulo diferente da torre — vale subir.">Best light is afternoon. The Palais de Chaillot behind has a free terrace with a different view.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Trocadero+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s2_3"><div class="stop-header" onclick="toggleStop('s2_3')"><div class="stop-check" onclick="checkStop(event,'s2_3')"></div><div class="stop-name" data-en="Torre Eiffel — summit at sunset" data-pt="Torre Eiffel — topo ao pôr do sol">Torre Eiffel — summit at sunset</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Built by Gustave Eiffel for the 1889 World's Fair, intended to be demolished after 20 years. It was saved because it made a perfect radio antenna. At 330 metres, it was the world's tallest structure for 41 years." data-pt="Construída por Gustave Eiffel para a Exposição Universal de 1889, com previsão de demolição após 20 anos. Foi salva porque fazia uma antena de rádio perfeita. Com 330 metros, foi a estrutura mais alta do mundo por 41 anos.">Built 1889. Nearly demolished. Saved because it made a perfect radio antenna.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The tower is repainted every 7 years using 60 tonnes of paint. It actually gets taller in summer — the iron expands in heat and the tower grows by up to 15cm. Every evening from dusk until 1am it sparkles for 5 minutes every hour. Stay for it." data-pt="A torre é repintada a cada 7 anos usando 60 toneladas de tinta. Ela fica mais alta no verão — o ferro se expande no calor e a torre cresce até 15cm. Toda noite do anoitecer até 1h ela brilha por 5 minutos a cada hora. Fique para ver.">Grows 15cm in summer heat. Sparkles every hour at night until 1am. Do not miss this.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Eiffel+Tower+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s2_4"><div class="stop-header" onclick="toggleStop('s2_4')"><div class="stop-check" onclick="checkStop(event,'s2_4')"></div><div class="stop-name" data-en="Campo de Marte" data-pt="Campo de Marte">Campo de Marte</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The large park stretching from the Eiffel Tower to the École Militaire. Originally a military training ground — the name means Field of Mars, the god of war. Today it is where Parisians come to picnic, watch the tower sparkle, and simply exist." data-pt="O grande parque que se estende da Torre Eiffel até a École Militaire. Originalmente um campo de treinamento militar — o nome significa Campo de Marte, deus da guerra. Hoje é onde os parisienses vêm fazer piquenique, ver a torre brilhar e simplesmente existir.">Military training ground turned beloved park. Bring a blanket and watch the tower sparkle.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="This is the best spot in Paris to watch the Eiffel Tower light show. Bring wine, a blanket, and snacks from a nearby boulangerie. Sit on the grass. This is exactly what Parisians do here." data-pt="Este é o melhor lugar em Paris para assistir ao show de luzes da Torre Eiffel. Leve vinho, uma manta e lanches de uma padaria próxima. Sente na grama. É exatamente o que os parisienses fazem aqui.">Best spot for the light show. Wine, blanket, grass. Exactly what Parisians do here.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Champ+de+Mars+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s2_5"><div class="stop-header" onclick="toggleStop('s2_5')"><div class="stop-check" onclick="checkStop(event,'s2_5')"></div><div class="stop-name" data-en="Pont Alexandre III" data-pt="Ponte Alexandre III">Pont Alexandre III</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The most ornate bridge in Paris, built for the 1900 World's Fair. Decorated with gilded bronze Art Nouveau lamps, cherubs, nymphs, and winged horses. Named after Tsar Alexander III of Russia to celebrate the Franco-Russian alliance." data-pt="A ponte mais ornamentada de Paris, construída para a Exposição Universal de 1900. Decorada com lâmpadas Art Nouveau em bronze dourado, querubins, ninfas e cavalos alados. Batizada em homenagem ao Czar Alexandre III da Rússia para celebrar a aliança franco-russa.">Most ornate bridge in Paris. Built 1900. Gold, cherubs, winged horses.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Walking across this bridge gives you views of the Eiffel Tower on one side and the Grand Palais on the other. It is considered one of the most beautiful bridges in the world and is a favourite for wedding photos." data-pt="Caminhar por esta ponte oferece vistas da Torre Eiffel de um lado e do Grand Palais do outro. É considerada uma das pontes mais belas do mundo e é favorita para fotos de casamento.">Views of Eiffel Tower one side, Grand Palais the other. Most beautiful bridge in Paris.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Pont+Alexandre+III+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s2_6"><div class="stop-header" onclick="toggleStop('s2_6')"><div class="stop-check" onclick="checkStop(event,'s2_6')"></div><div class="stop-name" data-en="Grand Palais and Petit Palais" data-pt="Grand Palais e Petit Palais">Grand Palais and Petit Palais</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Both built for the 1900 World's Fair, flanking the Champs-Élysées on its southern end. The Grand Palais has a spectacular glass and iron roof — the largest glass roof in France. The Petit Palais is a free museum with a beautiful garden courtyard." data-pt="Ambos construídos para a Exposição Universal de 1900, flanqueando os Champs-Élysées na extremidade sul. O Grand Palais tem um espetacular teto de vidro e ferro — o maior teto de vidro da França. O Petit Palais é um museu gratuito com um belo pátio de jardim.">Both built 1900. Grand Palais has France's largest glass roof. Petit Palais is free.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The Petit Palais is completely free to enter and has a surprisingly excellent permanent collection of art. The inner garden café is one of the most beautiful and underrated lunch spots in Paris." data-pt="O Petit Palais é completamente gratuito para entrar e tem uma coleção permanente de arte surpreendentemente excelente. O café do jardim interno é um dos spots de almoço mais bonitos e subestimados de Paris.">Petit Palais is free. Its garden café is one of the most beautiful lunch spots in Paris.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Grand+Palais+Paris" class="map-btn" target="_blank" data-en="📍 Grand Palais" data-pt="📍 Grand Palais">📍 Grand Palais</a><a href="https://www.google.com/maps/search/?api=1&query=Petit+Palais+Paris" class="map-btn" target="_blank" data-en="📍 Petit Palais" data-pt="📍 Petit Palais">📍 Petit Palais</a></div></div>
+
+      <div class="eat-block" id="eat2"><div class="eat-header" onclick="toggleEat('eat2')"><span class="eat-title" data-en="🍴 What to Eat Today" data-pt="🍴 O Que Comer Hoje">🍴 What to Eat Today</span><span class="eat-arrow">▼</span></div><div class="eat-body"><div class="eat-rule"></div>
+        <div class="eat-item"><span class="eat-emoji">🥩</span><div><span class="eat-text"><strong data-en="L'Ami Jean — Basque-French, 7th arr." data-pt="L'Ami Jean — basco-francês, 7° arr.">L'Ami Jean</strong></span><a href="https://www.google.com/maps/search/?api=1&query=L+Ami+Jean+27+Rue+Malar+Paris" class="eat-where" target="_blank" data-en="📍 27 Rue Malar, 7th · Packed, noisy, brilliant Basque-French cooking. Wild game, intense flavours, legendary rice pudding. Book well ahead — always full." data-pt="📍 27 Rue Malar, 7° · Lotado, barulhento, brilhante. Cozinha basco-francesa, caça, sabores intensos, arroz doce lendário. Reserve — sempre cheio.">📍 27 Rue Malar, 7th · Brilliant Basque-French. Book well ahead.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🍽️</span><div><span class="eat-text"><strong data-en="Le Café du Marché — local neighbourhood bistro" data-pt="Le Café du Marché — bistrô de bairro local">Le Café du Marché</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Le+Café+du+Marché+38+Rue+Cler+Paris" class="eat-where" target="_blank" data-en="📍 38 Rue Cler, 7th · On the best market street near the tower. House salad with foie gras, decent house wine, proper Parisian neighbourhood buzz. No reservation needed." data-pt="📍 38 Rue Cler, 7° · Na melhor rua de mercado perto da torre. Salada da casa com foie gras, bom vinho, clima parisiense de bairro. Sem reserva necessária.">📍 38 Rue Cler, 7th · Best market street near the tower. Local buzz, no reservation needed.</a></div></div>
+      </div></div>
+        <div class="eat-item"><span class="eat-emoji">🍽️</span><div><span class="eat-text"><strong data-en="Le Café du Marché — local neighbourhood bistro" data-pt="Le Café du Marché — bistrô de bairro local">Le Café du Marché</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Le+Café+du+Marché+38+Rue+Cler+Paris" class="eat-where" target="_blank" data-en="📍 38 Rue Cler, 7th · On the best market street near the tower. House salad with foie gras, good plonk, proper Parisian buzz." data-pt="📍 38 Rue Cler, 7° · Na melhor rua de mercado perto da torre. Salada da casa com foie gras, bom vinho, clima parisiense de verdade.">📍 38 Rue Cler, 7th · Best market street near the tower. Local buzz.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Pitanga — Brazilian tapas, 1st arr." data-pt="Pitanga — tapas brasileiras, 1° arr.">Pitanga</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Pitanga+11+Rue+Jean-Jacques+Rousseau+Paris" class="eat-where" target="_blank" data-en="📍 11 Rue Jean-Jacques Rousseau, 1st · Chef trained with Alain Ducasse. Picanha with cassava fries, caipirinhas, small plates. Outstanding." data-pt="📍 11 Rue Jean-Jacques Rousseau, 1° · Chef formado com Alain Ducasse. Picanha com fritas de mandioca, caipirinhas, petiscos. Imperdível.">📍 11 Rue Jean-Jacques Rousseau, 1st · Ducasse-trained chef. Picanha outstanding.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Brasileirinho — most authentic Brazilian in Paris" data-pt="Brasileirinho — o mais autêntico brasileiro de Paris">Brasileirinho</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Brasileirinho+129+Rue+Legendre+Paris+17" class="eat-where" target="_blank" data-en="📍 129 Rue Legendre, 17th · 20 min by Métro. Feijoada, picanha, traditional regional dishes. Live music Fri and Sat. Reserve." data-pt="📍 129 Rue Legendre, 17° · 20 min de Metrô. Feijoada, picanha, pratos regionais tradicionais. Música ao vivo sex e sáb. Reserve.">📍 129 Rue Legendre, 17th · 20 min by Métro. Feijoada, picanha, live music Fri/Sat.</a></div></div>
+      </div></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="How was the tower? The light show? First impressions of Paris..." data-placeholder-pt="Como foi a torre? O show de luzes? Primeiras impressões de Paris..." data-day="2" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 3: DISNEYLAND -->
+  <div class="day-card" id="day3"><button class="day-trigger" onclick="toggleDay('day3')"><span class="day-num">03</span><div class="day-info"><div class="day-name" data-en="Disneyland Paris 🏰" data-pt="Disneyland Paris 🏰">Disneyland Paris 🏰</div><div class="day-focus" data-en="Full day — leave by 8:30am, RER A" data-pt="Dia inteiro — saia às 8h30, RER A">Full day — leave 8:30am, RER A</div><div class="day-weekday" data-en="Thursday, 21 May" data-pt="Quinta-feira, 21 de Maio">Thursday, 21 May</div></div><div class="day-badge"><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+
+      <div class="stop" id="s3_1"><div class="stop-header" onclick="toggleStop('s3_1')"><div class="stop-check" onclick="checkStop(event,'s3_1')"></div><div class="stop-name" data-en="Getting There — RER A" data-pt="Como Chegar — RER A">Getting There — RER A</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ The Plan" data-pt="✦ O Plano">✦ The Plan</span><p class="detail-text" data-en="Take the Métro to Châtelet-Les Halles, then board the RER A direction Marne-la-Vallée / Chessy. Journey is about 40 minutes and the train drops you at the park entrance. Leave the hotel by 8:30am to arrive before the gates open at 9:30am." data-pt="Pegue o Metrô até Châtelet-Les Halles, depois embarque no RER A sentido Marne-la-Vallée / Chessy. Trajeto de cerca de 40 minutos e o trem te deixa na entrada do parque. Saia do hotel às 8h30 para chegar antes da abertura dos portões às 9h30.">Métro to Châtelet, then RER A to Marne-la-Vallée. 40 min. Leave 8:30am.</p></div></div></div>
+
+      <div class="stop" id="s3_2"><div class="stop-header" onclick="toggleStop('s3_2')"><div class="stop-check" onclick="checkStop(event,'s3_2')"></div><div class="stop-name" data-en="Sleeping Beauty's Castle" data-pt="Castelo da Bela Adormecida">Sleeping Beauty's Castle</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Unlike American Disney parks which have Cinderella's Castle, Disneyland Paris features Sleeping Beauty's Castle — a nod to the original Charles Perrault fairy tale, which is French. The castle's design is based on French and German medieval architecture, making it more authentically European than any other Disney castle." data-pt="Ao contrário dos parques Disney americanos que têm o Castelo da Cinderela, o Disneyland Paris apresenta o Castelo da Bela Adormecida — uma referência ao conto de fadas original de Charles Perrault, que é francês. O design do castelo é baseado na arquitetura medieval francesa e alemã, tornando-o mais autenticamente europeu do que qualquer outro castelo Disney.">This is Sleeping Beauty's Castle — based on a French fairy tale. More European than any other Disney castle.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Inside the castle there is a walkthrough telling the story of Sleeping Beauty with medieval stained glass, tapestries, and even a dragon in the basement. Most people walk straight past it. Do not." data-pt="Dentro do castelo há um percurso contando a história da Bela Adormecida com vitrais medievais, tapeçarias e até um dragão no porão. A maioria das pessoas passa direto por ele. Não faça isso.">There is a walkthrough inside the castle with a dragon in the basement. Most people miss it.</p></div></div></div>
+
+      <div class="stop" id="s3_3"><div class="stop-header" onclick="toggleStop('s3_3')"><div class="stop-check" onclick="checkStop(event,'s3_3')"></div><div class="stop-name" data-en="Pirates of the Caribbean" data-pt="Piratas do Caribe">Pirates of the Caribbean</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The Paris version of this classic ride is significantly longer and more elaborate than the Florida original — it was the last Pirates ride personally overseen by Walt Disney's original Imagineers. Do not skip this." data-pt="A versão de Paris desta atração clássica é significativamente mais longa e elaborada do que a original da Flórida — foi a última atração Piratas supervisionada pessoalmente pelos Imagineers originais de Walt Disney. Não pule esta.">The Paris version is longer and better than Florida. The last one personally overseen by Disney's original Imagineers.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The Paris Pirates of the Caribbean has an additional sequence at the beginning — a slow journey through foggy bayou swamps with fireflies — that was removed from other parks. Go first thing in the morning before queues build." data-pt="O Piratas do Caribe de Paris tem uma sequência adicional no começo — uma jornada lenta por pântanos nebulosos do bayou com vaga-lumes — que foi removida dos outros parques. Vá logo cedo antes das filas aumentarem.">Has a unique foggy bayou sequence removed from other parks. Go first thing in the morning.</p></div></div></div>
+
+      <div class="stop" id="s3_4"><div class="stop-header" onclick="toggleStop('s3_4')"><div class="stop-check" onclick="checkStop(event,'s3_4')"></div><div class="stop-name" data-en="Phantom Manor" data-pt="Phantom Manor">Phantom Manor</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The Paris version of the Haunted Mansion but with a completely original story. Set in a Victorian mansion in the American frontier town of Thunder Mesa, it tells the tale of a ghost bride who was never able to marry. The narrative, set design, and atmosphere are far more developed than any other version of this ride worldwide." data-pt="A versão parisiense do Haunted Mansion mas com uma história completamente original. Ambientada em uma mansão vitoriana na cidade fronteiriça americana de Thunder Mesa, conta a história de uma noiva fantasma que nunca conseguiu se casar. A narrativa, o design de cenário e a atmosfera são muito mais desenvolvidos do que qualquer outra versão desta atração no mundo.">Completely original story — a ghost bride in a Victorian mansion. Far better than any other Haunted Mansion worldwide.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Phantom Manor is considered by many Disney enthusiasts to be the single best dark ride in any Disney park in the world. The queue itself tells the story — read everything on the walls." data-pt="O Phantom Manor é considerado por muitos entusiastas da Disney como a melhor atração de dark ride em qualquer parque Disney do mundo. A própria fila conta a história — leia tudo nas paredes.">Considered by many Disney fans to be the best dark ride in any Disney park worldwide.</p></div></div></div>
+
+      <div class="stop" id="s3_5"><div class="stop-header" onclick="toggleStop('s3_5')"><div class="stop-check" onclick="checkStop(event,'s3_5')"></div><div class="stop-name" data-en="Big Thunder Mountain" data-pt="Big Thunder Mountain">Big Thunder Mountain</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The Paris Big Thunder Mountain is built on an island in the middle of a lake, making it visually spectacular from the outside. It is longer than the American versions and considered the best version of this ride in the world. Use Premier Access to skip the queue." data-pt="O Big Thunder Mountain de Paris é construído em uma ilha no meio de um lago, tornando-o visualmente espetacular por fora. É mais longo que as versões americanas e considerado a melhor versão desta atração no mundo. Use o Premier Access para pular a fila.">Built on an island in a lake. Longer than American versions. Best Big Thunder Mountain in the world.</p></div></div></div>
+
+      <div class="stop" id="s3_6"><div class="stop-header" onclick="toggleStop('s3_6')"><div class="stop-check" onclick="checkStop(event,'s3_6')"></div><div class="stop-name" data-en="Evening Parade and Castle Show" data-pt="Desfile Noturno e Show do Castelo">Evening Parade and Castle Show</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Must Do" data-pt="✦ Obrigatório">✦ Must Do</span><p class="detail-text" data-en="The evening parade on Main Street USA happens daily at around 5:30pm — floats, characters, music, and genuinely spectacular production values. After dark, the castle projection show with fireworks is one of the best light shows in any theme park in the world. Find a spot on Main Street 30 minutes before it starts." data-pt="O desfile noturno na Main Street USA acontece diariamente por volta das 17h30 — carros alegóricos, personagens, música e valores de produção genuinamente espetaculares. Após o anoitecer, o show de projeção no castelo com fogos de artifício é um dos melhores espetáculos de luz em qualquer parque temático do mundo. Encontre um lugar na Main Street 30 minutos antes.">Evening parade ~5:30pm. Castle projection show after dark. Find a spot 30 min early.</p></div></div></div>
+
+      <div class="eat-block" id="eat3"><div class="eat-header" onclick="toggleEat('eat3')"><span class="eat-title" data-en="🍴 Eating at Disney" data-pt="🍴 Comendo na Disney">🍴 Eating at Disney</span><span class="eat-arrow">▼</span></div><div class="eat-body"><div class="eat-rule"></div>
+        <div class="eat-item"><span class="eat-emoji">🏰</span><div><span class="eat-text"><strong data-en="Blue Lagoon Restaurant — inside the Pirates ride" data-pt="Blue Lagoon Restaurant — dentro do Piratas">Blue Lagoon Restaurant</strong></span><a class="eat-where" data-en="📍 Fantasyland · You eat while Pirates of the Caribbean boats float past. One of the most unique dining experiences in any theme park. Book ahead at disneylandparis.com — it fills up weeks before." data-pt="📍 Fantasyland · Você come enquanto os barcos do Piratas do Caribe passam. Uma das experiências de jantar mais únicas em qualquer parque temático. Reserve em disneylandparis.com — esgota semanas antes.">📍 Fantasyland · Boats float past while you eat. Book weeks ahead.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🍖</span><div><span class="eat-text"><strong data-en="Cowboy Cookout BBQ — big portions, good value" data-pt="Cowboy Cookout BBQ — porções grandes, bom valor">Cowboy Cookout BBQ</strong></span><a class="eat-where" data-en="📍 Frontierland · Grilled chicken, ribs, and sausages with unlimited refills. Best value sit-down meal in the park. Huge portions. No reservation needed." data-pt="📍 Frontierland · Frango grelhado, costelas e salsichas com refil ilimitado. Melhor custo-benefício no parque. Porções enormes. Sem reserva.">📍 Frontierland · Ribs, chicken, sausages. Best value in the park.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🥐</span><div><span class="eat-text"><strong data-en="Bring a picnic from a boulangerie — save serious money" data-pt="Traga um piquenique da padaria — economize muito">Bring a picnic from a boulangerie</strong></span><a class="eat-where" data-en="📍 Disney allows sealed food and drinks. Stop at a boulangerie near the hotel before you leave. A baguette, cheese, and juice will be both cheaper and better than park food." data-pt="📍 A Disney permite alimentos e bebidas fechados. Pare em uma padaria perto do hotel antes de sair. Uma baguete, queijo e suco será mais barato e melhor do que a comida do parque.">📍 Buy from a boulangerie before leaving. Cheaper and better than park food.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🍦</span><div><span class="eat-text"><strong data-en="Churros on Main Street USA — non-negotiable" data-pt="Churros na Main Street USA — não negociável">Churros on Main Street USA</strong></span><a class="eat-where" data-en="📍 Main Street USA · The Disney churros are genuinely good — crispy outside, soft inside, cinnamon sugar. Get one. You deserve it." data-pt="📍 Main Street USA · Os churros da Disney são genuinamente bons — crocantes por fora, macios por dentro, açúcar e canela. Coma um. Você merece.">📍 Main Street USA · Crispy, cinnamon, genuinely good. Get one.</a></div></div>
+      </div></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="Best rides, memories, what surprised you..." data-placeholder-pt="Melhores atrações, memórias, o que te surpreendeu..." data-day="3" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 4: RIGHT BANK -->
+  <div class="day-card" id="day4"><button class="day-trigger" onclick="toggleDay('day4')"><span class="day-num">04</span><div class="day-info"><div class="day-name" data-en="The Grand Boulevard" data-pt="O Grande Bulevar">The Grand Boulevard</div><div class="day-focus" data-en="Arc de Triomphe east to Opéra and Montmartre" data-pt="Arco do Triunfo leste até Ópera e Montmartre">Arc de Triomphe east to Opéra</div><div class="day-weekday" data-en="Friday, 22 May" data-pt="Sexta-feira, 22 de Maio">Friday, 22 May</div></div><div class="day-badge"><span class="day-check-count" id="day4-count"></span><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+
+      <div class="stop" id="s4_1"><div class="stop-header" onclick="toggleStop('s4_1')"><div class="stop-check" onclick="checkStop(event,'s4_1')"></div><div class="stop-name" data-en="Arc de Triomphe" data-pt="Arco do Triunfo">Arc de Triomphe</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Commissioned by Napoleon in 1806 to celebrate his victories, though he never saw it completed — it was finished in 1836, 15 years after his death. The Unknown Soldier has been buried at its base since 1920, with an eternal flame that is relit every evening at 6:30pm." data-pt="Encomendado por Napoleão em 1806 para celebrar suas vitórias, embora ele nunca o tenha visto concluído — foi terminado em 1836, 15 anos após sua morte. O Soldado Desconhecido está enterrado em sua base desde 1920, com uma chama eterna que é reacendida todas as noites às 18h30.">Commissioned by Napoleon 1806. Finished 15 years after his death. Eternal flame relit at 6:30pm daily.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Climb to the top for a panoramic view of Paris spreading out along twelve avenues — genuinely spectacular. Use the underground pedestrian crossing to reach it — do not attempt to cross the roundabout on foot, it has no traffic lights and 12 lanes of cars." data-pt="Suba ao topo para uma vista panorâmica de Paris se espalhando em doze avenidas — genuinamente espetacular. Use a passagem subterrânea para chegar — não tente atravessar a rotatória a pé, não tem semáforos e tem 12 faixas de carros.">Use the underground crossing. The roundabout has no traffic lights and 12 lanes of cars.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Arc+de+Triomphe+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_2"><div class="stop-header" onclick="toggleStop('s4_2')"><div class="stop-check" onclick="checkStop(event,'s4_2')"></div><div class="stop-name" data-en="Champs-Élysées" data-pt="Champs-Élysées">Champs-Élysées</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The most famous avenue in the world, stretching 1.9 kilometres from the Arc de Triomphe to the Place de la Concorde. The name means Elysian Fields — the paradise of Greek mythology. It hosts the Tour de France finish line and Bastille Day military parade every year." data-pt="A avenida mais famosa do mundo, com 1,9 km do Arco do Triunfo até a Place de la Concorde. O nome significa Campos Elíseos — o paraíso da mitologia grega. Sedia o final do Tour de France e o desfile militar do Dia da Bastilha todo ano.">Most famous avenue in the world. 1.9km. Hosts Tour de France finish and Bastille Day parade.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Yes, it is touristy and the shops are overpriced — but you walk it once. Duck into the side streets: Avenue Montaigne to the south has better boutiques, and the streets north of the avenue near the Arc have excellent hidden restaurants. Do not eat on the Champs itself." data-pt="Sim, é turístico e as lojas são caras — mas você percorre uma vez. Entre nas ruas laterais: Avenue Montaigne ao sul tem melhores boutiques, e as ruas ao norte da avenida perto do Arco têm ótimos restaurantes escondidos. Não coma na própria avenida.">Touristy and overpriced, but walk it once. Side streets have far better food.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Champs-Elysees+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_3"><div class="stop-header" onclick="toggleStop('s4_3')"><div class="stop-check" onclick="checkStop(event,'s4_3')"></div><div class="stop-name" data-en="Place de la Concorde" data-pt="Place de la Concorde">Place de la Concorde</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The largest square in Paris. During the French Revolution, the guillotine was placed here — King Louis XVI and Marie Antoinette were both executed on this spot. The obelisk in the centre is 3,300 years old, a gift from Egypt." data-pt="A maior praça de Paris. Durante a Revolução Francesa, a guilhotina foi colocada aqui — o Rei Luís XVI e Maria Antonieta foram ambos executados neste local. O obelisco no centro tem 3.300 anos, um presente do Egito.">Louis XVI and Marie Antoinette were guillotined here. The obelisk in the centre is 3,300 years old.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Standing at the obelisk, you can see both the Arc de Triomphe to the west and the Louvre to the east in perfect alignment. This is the central axis of Paris, the Grande Axe, which runs for 10 kilometres." data-pt="De pé no obelisco, você pode ver tanto o Arco do Triunfo a oeste quanto o Louvre a leste em perfeito alinhamento. Este é o eixo central de Paris, a Grande Axe, que se estende por 10 quilômetros.">Standing here you can see the Arc de Triomphe and the Louvre in perfect alignment — the Grande Axe of Paris.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Place+de+la+Concorde+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_4"><div class="stop-header" onclick="toggleStop('s4_4')"><div class="stop-check" onclick="checkStop(event,'s4_4')"></div><div class="stop-name" data-en="Jardim das Tulherias" data-pt="Jardim das Tulherias">Jardim das Tulherias</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Created in 1564 for Catherine de Medici, the Tuileries is the oldest public garden in Paris. It connects the Place de la Concorde to the Louvre, making it a natural walking corridor. The Impressionist masters used to paint here." data-pt="Criado em 1564 para Catarina de Médici, as Tulherias é o jardim público mais antigo de Paris. Conecta a Place de la Concorde ao Louvre, tornando-se um corredor de caminhada natural. Os mestres impressionistas costumavam pintar aqui.">Oldest public garden in Paris. Created 1564 for Catherine de Medici. Walk through it to the Louvre.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="There is an outdoor sculpture gallery throughout the garden — original works by Rodin, Maillol and others, just sitting there for free. The terrace cafés overlooking the Seine are pleasant for a coffee break." data-pt="Há uma galeria de esculturas ao ar livre em todo o jardim — obras originais de Rodin, Maillol e outros, simplesmente lá, de graça. Os cafés no terraço com vista para o Sena são agradáveis para uma pausa para café.">Free outdoor sculptures by Rodin and others throughout. Coffee terrace overlooking the Seine.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Jardin+des+Tuileries+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_5"><div class="stop-header" onclick="toggleStop('s4_5')"><div class="stop-check" onclick="checkStop(event,'s4_5')"></div><div class="stop-name" data-en="Palais Royal" data-pt="Palais Royal">Palais Royal</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Built in 1629 for Cardinal Richelieu and later home to Louis XIV as a child. The beautiful colonnaded courtyard in the centre has designer boutiques, restaurants, and a famous art installation of black and white striped columns." data-pt="Construído em 1629 para o Cardeal Richelieu e mais tarde lar do Luís XIV quando criança. O belo pátio colonado no centro tem boutiques de designer, restaurantes e uma famosa instalação de arte com colunas listradas em preto e branco.">Built 1629 for Cardinal Richelieu. Louis XIV lived here as a child. Beautiful colonnaded courtyard.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The black and white striped columns in the courtyard are an art installation called Les Deux Plateaux by Daniel Buren, installed in 1986. Parisians were furious about it at the time. Now they love it." data-pt="As colunas listradas em preto e branco no pátio são uma instalação de arte chamada Les Deux Plateaux de Daniel Buren, instalada em 1986. Os parisienses ficaram furiosos com isso na época. Agora eles adoram.">The striped columns were hated by Parisians in 1986. Now they love them.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Palais+Royal+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_6"><div class="stop-header" onclick="toggleStop('s4_6')"><div class="stop-check" onclick="checkStop(event,'s4_6')"></div><div class="stop-name" data-en="Place Vendôme" data-pt="Place Vendôme">Place Vendôme</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The most prestigious address in Paris. Chanel, Cartier, Van Cleef, Rolex — they all have their flagship stores here. The column in the centre was built by Napoleon from the melted-down bronze of 1,200 cannons captured at the Battle of Austerlitz." data-pt="O endereço mais prestigioso de Paris. Chanel, Cartier, Van Cleef, Rolex — todas têm suas lojas principais aqui. A coluna no centro foi construída por Napoleão com o bronze fundido de 1.200 canhões capturados na Batalha de Austerlitz.">Chanel, Cartier, Van Cleef all here. The column is made from 1,200 cannons melted from Austerlitz.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Frédéric Chopin died in his apartment at Place Vendôme 12 in 1849. The Ritz Paris, one of the most famous hotels in the world, occupies the entire north side of the square." data-pt="Frédéric Chopin morreu em seu apartamento na Place Vendôme 12 em 1849. O Ritz Paris, um dos hotéis mais famosos do mundo, ocupa todo o lado norte da praça.">Chopin died at number 12. The Ritz hotel occupies the entire north side.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Place+Vendome+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_7"><div class="stop-header" onclick="toggleStop('s4_7')"><div class="stop-check" onclick="checkStop(event,'s4_7')"></div><div class="stop-name" data-en="Palais Garnier — the Opera" data-pt="Palais Garnier — a Ópera">Palais Garnier — the Opera</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Built between 1861 and 1875, the Palais Garnier is one of the most magnificent buildings in the world. It inspired the story of The Phantom of the Opera — there really is a lake beneath the building, used to stabilise the foundations." data-pt="Construído entre 1861 e 1875, o Palais Garnier é um dos edifícios mais magníficos do mundo. Inspirou a história do Fantasma da Ópera — há realmente um lago abaixo do edifício, usado para estabilizar as fundações.">Inspired The Phantom of the Opera. There really is a lake beneath the building.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="You can visit the interior during the day without attending a performance. The grand staircase, the main auditorium, and the ceiling painted by Marc Chagall are worth seeing. The rooftop also has excellent views." data-pt="Você pode visitar o interior durante o dia sem assistir a uma apresentação. A grande escadaria, o auditório principal e o teto pintado por Marc Chagall valem a visita. O terraço também tem vistas excelentes.">Can visit without a performance. The ceiling was painted by Marc Chagall. Rooftop has great views.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Palais+Garnier+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_8"><div class="stop-header" onclick="toggleStop('s4_8')"><div class="stop-check" onclick="checkStop(event,'s4_8')"></div><div class="stop-name" data-en="Galeries Lafayette Haussmann — rooftop" data-pt="Galeries Lafayette Haussmann — terraço">Galeries Lafayette Haussmann — free rooftop</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The rooftop of Galeries Lafayette is completely free and gives you one of the best panoramic views of Paris — the Opéra directly below and the Eiffel Tower in the distance. Take the lift to the top floor, walk out to the terrace. No purchase required." data-pt="O terraço das Galeries Lafayette é completamente gratuito e oferece uma das melhores vistas panorâmicas de Paris — a Ópera diretamente abaixo e a Torre Eiffel ao longe. Suba de elevador até o último andar, vá para o terraço. Nenhuma compra necessária.">Completely free. Lift to top floor. Opéra below, Eiffel Tower in the distance. No purchase needed.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Galeries+Lafayette+Paris+Haussmann" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s4_9"><div class="stop-header" onclick="toggleStop('s4_9')"><div class="stop-check" onclick="checkStop(event,'s4_9')"></div><div class="stop-name" data-en="Montmartre + Sacré-Cœur (evening)" data-pt="Montmartre + Sacré-Cœur (tarde/noite)">Montmartre + Sacré-Cœur (evening)</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Montmartre was the bohemian heart of Paris in the late 19th and early 20th centuries. Picasso, Modigliani, and Toulouse-Lautrec all lived and worked here when rents were cheap. The Sacré-Cœur basilica was built between 1875 and 1914 as a symbol of national penance after France's defeat in the Franco-Prussian War." data-pt="Montmartre foi o coração boêmio de Paris no final do século XIX e início do século XX. Picasso, Modigliani e Toulouse-Lautrec viveram e trabalharam aqui quando os aluguéis eram baratos. A basílica do Sacré-Cœur foi construída entre 1875 e 1914 como símbolo de penitência nacional após a derrota da França na Guerra Franco-Prussiana.">Picasso and Modigliani lived here. The Sacré-Cœur was built as national penance after a war defeat.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The view from the forecourt of Sacré-Cœur at dusk is one of the most beautiful views in Paris. Take the funicular (covered by your Navigo pass). Explore behind the basilica — the vineyards and cobbled streets are 5 minutes from the tourist front and feel like a completely different city." data-pt="A vista do adro do Sacré-Cœur ao entardecer é uma das mais belas de Paris. Pegue o funicular (coberto pelo passe Navigo). Explore atrás da basílica — os vinhedos e ruas de paralelepípedos ficam 5 minutos da frente turística e parecem uma cidade completamente diferente.">Dusk view from the forecourt is unmissable. Explore behind the basilica — 5 min from tourists, completely different.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Sacre+Coeur+Montmartre+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="eat-block" id="eat4"><div class="eat-header" onclick="toggleEat('eat4')"><span class="eat-title" data-en="🍴 What to Eat Today" data-pt="🍴 O Que Comer Hoje">🍴 What to Eat Today</span><span class="eat-arrow">▼</span></div><div class="eat-body"><div class="eat-rule"></div>
+        <div class="eat-item"><span class="eat-emoji">🥩</span><div><span class="eat-text"><strong data-en="Le Relais de l'Entrecôte — one dish, done perfectly" data-pt="Le Relais de l'Entrecôte — um prato, feito perfeitamente">Le Relais de l'Entrecôte</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Relais+de+l+Entrecote+15+Rue+Marbeuf+Paris" class="eat-where" target="_blank" data-en="📍 15 Rue Marbeuf, 8th · No menu. One dish: steak frites with a legendary secret green sauce, unlimited. Choose how you want your steak cooked — that is the only decision. Arrive early or queue." data-pt="📍 15 Rue Marbeuf, 8° · Sem cardápio. Um prato: steak frites com o molho verde secreto lendário, ilimitado. Só escolhe o ponto do bife. Chegue cedo ou enfrente a fila.">📍 15 Rue Marbeuf, 8th · One dish, unlimited. Secret sauce is legendary. Arrive early.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🍽️</span><div><span class="eat-text"><strong data-en="Bouillon Pigalle — foot of Montmartre" data-pt="Bouillon Pigalle — sopé de Montmartre">Bouillon Pigalle</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Bouillon+Pigalle+22+Boulevard+de+Clichy+Paris" class="eat-where" target="_blank" data-en="📍 22 Bd de Clichy, 18th · Old-school Parisian brasserie at the foot of Montmartre. Enormous portions, great value. Classic onion soup, steak frites, crème brûlée. No reservations — arrive before 7pm." data-pt="📍 22 Bd de Clichy, 18° · Brasserie parisiense antiquada no sopé de Montmartre. Porções enormes, ótimo valor. Sopa de cebola, steak frites, crème brûlée. Sem reserva — chegue antes das 19h.">📍 22 Bd de Clichy, 18th · Enormous portions, great value. No reservations, arrive before 7pm.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Gabriela — authentic Brazilian, 9th arr." data-pt="Gabriela — brasileiro autêntico, 9° arr.">Gabriela</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Gabriela+3+Rue+Milton+Paris+9" class="eat-where" target="_blank" data-en="📍 3 Rue Milton, 9th · Near Opéra and Montmartre. 100% Brazilian — feijoada, picanha, moqueca, caipirinhas. Festive atmosphere, live music, feels genuinely like Brazil. Reserve." data-pt="📍 3 Rue Milton, 9° · Perto da Ópera e Montmartre. 100% brasileiro — feijoada, picanha, moqueca, caipirinhas. Clima festivo, música ao vivo, parece mesmo o Brasil. Reserve.">📍 3 Rue Milton, 9th · Near Opéra. 100% Brazilian — feijoada, picanha, live music. Reserve.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Brasileirinho — 15 min walk from Montmartre" data-pt="Brasileirinho — 15 min a pé de Montmartre">Brasileirinho</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Brasileirinho+129+Rue+Legendre+Paris+17" class="eat-where" target="_blank" data-en="📍 129 Rue Legendre, 17th · 15 min walk from Montmartre. The most authentic Brazilian restaurant in Paris. Feijoada, picanha, traditional regional dishes. Live bossa nova music Fri and Sat. Reserve." data-pt="📍 129 Rue Legendre, 17° · 15 min a pé de Montmartre. O mais autêntico restaurante brasileiro de Paris. Feijoada, picanha, pratos regionais tradicionais. Bossa nova ao vivo sex e sáb. Reserve.">📍 129 Rue Legendre, 17th · 15 min from Montmartre. Feijoada, picanha, live bossa nova Fri/Sat.</a></div></div>
+      </div></div>
+        <div class="eat-item"><span class="eat-emoji">🍽️</span><div><span class="eat-text"><strong data-en="Bouillon Pigalle — foot of Montmartre" data-pt="Bouillon Pigalle — sopé de Montmartre">Bouillon Pigalle</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Bouillon+Pigalle+22+Boulevard+de+Clichy+Paris" class="eat-where" target="_blank" data-en="📍 22 Bd de Clichy, 18th · Old-school Parisian brasserie, enormous portions, great value. Classic onion soup, steak frites, crème brûlée. Arrive before 7pm." data-pt="📍 22 Bd de Clichy, 18° · Brasserie parisiense antiquada, porções enormes, ótimo valor. Sopa de cebola clássica, steak frites, crème brûlée. Chegue antes das 19h.">📍 22 Bd de Clichy, 18th · Enormous portions, great value. Arrive before 7pm.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Brasileirinho — 15 min from Montmartre" data-pt="Brasileirinho — 15 min de Montmartre">Brasileirinho</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Brasileirinho+129+Rue+Legendre+Paris+17" class="eat-where" target="_blank" data-en="📍 129 Rue Legendre, 17th · The most authentic Brazilian restaurant in Paris. Feijoada, picanha, traditional dishes from across Brazil. Live music Fri and Sat. Must reserve." data-pt="📍 129 Rue Legendre, 17° · O mais autêntico restaurante brasileiro de Paris. Feijoada, picanha, pratos tradicionais de todo o Brasil. Música ao vivo sex e sáb. Reserve.">📍 129 Rue Legendre, 17th · Most authentic Brazilian in Paris. Live music Fri/Sat. Reserve.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Rue des Martyrs food street + Pitanga for dinner" data-pt="Rua des Martyrs + Pitanga para jantar">Rue des Martyrs + Pitanga</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Rue+des+Martyrs+Paris+9" class="eat-where" target="_blank" data-en="📍 Rue des Martyrs, 9th · Best artisan food street in Paris for grazing and picnic supplies. Then dinner at Pitanga (11 Rue Jean-Jacques Rousseau) — Brazilian tapas near the Louvre." data-pt="📍 Rue des Martyrs, 9° · Melhor rua de comida artesanal de Paris. Depois jantar no Pitanga (11 Rue Jean-Jacques Rousseau) — tapas brasileiras perto do Louvre.">📍 Rue des Martyrs for snacks, Pitanga for dinner — Brazilian tapas near Louvre.</a></div></div>
+      </div></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="Favourite stop of the day? Best view? What surprised you..." data-placeholder-pt="Parada favorita do dia? Melhor vista? O que te surpreendeu..." data-day="4" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 5: LOUVRE AND RIVER -->
+  <div class="day-card" id="day5"><button class="day-trigger" onclick="toggleDay('day5')"><span class="day-num">05</span><div class="day-info"><div class="day-name" data-en="The River and the Masters" data-pt="O Rio e os Mestres">The River and the Masters</div><div class="day-focus" data-en="Louvre · Seine · Notre-Dame · Luxembourg" data-pt="Louvre · Sena · Notre-Dame · Luxemburgo">Louvre · Seine · Notre-Dame · Luxembourg</div><div class="day-weekday" data-en="Saturday, 23 May" data-pt="Sábado, 23 de Maio">Saturday, 23 May</div></div><div class="day-badge"><span class="day-check-count" id="day5-count"></span><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+
+      <div class="stop" id="s5_1"><div class="stop-header" onclick="toggleStop('s5_1')"><div class="stop-check" onclick="checkStop(event,'s5_1')"></div><div class="stop-name" data-en="Museu do Louvre — Denon Wing" data-pt="Museu do Louvre — Ala Denon">Museu do Louvre — Denon Wing only</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="The world's largest art museum, housed in a former royal palace. Do not try to see it all — it is physically impossible in one day. The Denon Wing is the 'greatest hits' wing: Winged Victory of Samothrace at the top of the stairs, Venus de Milo, and the Mona Lisa. That alone is 3 hours." data-pt="O maior museu de arte do mundo, instalado em um antigo palácio real. Não tente ver tudo — é fisicamente impossível em um dia. A Ala Denon é a ala dos 'maiores sucessos': Vitória de Samotrácia no topo das escadas, Vênus de Milo e a Mona Lisa. Só isso já são 3 horas.">World's largest museum. Denon Wing only: Winged Victory, Venus de Milo, Mona Lisa. 3 hours.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The Mona Lisa is smaller than most people expect — 77 x 53cm. The crowd around it is always enormous. See it first thing when you enter, then take your time with everything else. The Winged Victory of Samothrace at the top of the Daru staircase is far more impressive in person." data-pt="A Mona Lisa é menor do que a maioria espera — 77 x 53cm. A multidão ao redor dela é sempre enorme. Veja-a logo ao entrar, depois aproveite o resto com calma. A Vitória de Samotrácia no topo da escadaria Daru é muito mais impressionante pessoalmente.">Mona Lisa is 77x53cm. See it first. Winged Victory at the top of the stairs is far more impressive.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Louvre+Museum+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s5_2"><div class="stop-header" onclick="toggleStop('s5_2')"><div class="stop-check" onclick="checkStop(event,'s5_2')"></div><div class="stop-name" data-en="Caminhada pelo Sena" data-pt="Caminhada pelo Sena">Caminhada pelo Sena</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ The Walk" data-pt="✦ A Caminhada">✦ The Walk</span><p class="detail-text" data-en="After the Louvre, walk east along the river towards Notre-Dame. The walk passes the Pont des Arts (the love lock bridge), the Île de la Cité with Sainte-Chapelle visible, and ends at Notre-Dame. About 30 minutes of gentle walking with beautiful views the entire way." data-pt="Após o Louvre, caminhe para leste ao longo do rio em direção a Notre-Dame. A caminhada passa pela Pont des Arts (a ponte dos cadeados), a Île de la Cité com a Sainte-Chapelle visível, e termina em Notre-Dame. Cerca de 30 minutos de caminhada suave com vistas bonitas o tempo todo.">Walk east along the river from the Louvre to Notre-Dame. 30 min. Beautiful the entire way.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Quai+des+Tuileries+Paris" class="map-btn" target="_blank" data-en="📍 Start Here" data-pt="📍 Comece Aqui">📍 Start Here</a></div></div>
+
+      <div class="stop" id="s5_3"><div class="stop-header" onclick="toggleStop('s5_3')"><div class="stop-check" onclick="checkStop(event,'s5_3')"></div><div class="stop-name" data-en="Passeio de Barco pelo Sena" data-pt="Passeio de Barco pelo Sena">Passeio de Barco pelo Sena</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The evening cruise gives you all the major landmarks — Louvre, Notre-Dame, Eiffel Tower — from the water at dusk. Bateaux-Mouches and Vedettes du Pont Neuf both depart from Pont Neuf. Book ahead. The tower lights up at night and the view from the water is extraordinary." data-pt="O passeio noturno oferece todos os principais monumentos — Louvre, Notre-Dame, Torre Eiffel — da água ao entardecer. Bateaux-Mouches e Vedettes du Pont Neuf partem ambos da Pont Neuf. Reserve com antecedência. A torre se ilumina à noite e a vista da água é extraordinária.">Evening cruise from Pont Neuf. Louvre, Notre-Dame, lit-up Eiffel Tower from the water. Book ahead.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Vedettes+du+Pont+Neuf+Paris" class="map-btn" target="_blank" data-en="📍 Pont Neuf Departures" data-pt="📍 Partidas Pont Neuf">📍 Pont Neuf Departures</a></div></div>
+
+      <div class="stop" id="s5_4"><div class="stop-header" onclick="toggleStop('s5_4')"><div class="stop-check" onclick="checkStop(event,'s5_4')"></div><div class="stop-name" data-en="Catedral de Notre-Dame" data-pt="Catedral de Notre-Dame">Catedral de Notre-Dame</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Construction began in 1163 and took almost 200 years to complete. The cathedral burned dramatically on 15 April 2019 and the world watched the spire collapse. It reopened in December 2024 after a five-year restoration. The interior has been restored to extraordinary beauty." data-pt="A construção começou em 1163 e levou quase 200 anos para ser concluída. A catedral pegou fogo dramaticamente em 15 de abril de 2019 e o mundo assistiu à queda da torre. Ela reabriu em dezembro de 2024 após uma restauração de cinco anos. O interior foi restaurado para uma beleza extraordinária.">Built 1163-1345. Burned April 2019. Reopened December 2024. More beautiful than ever.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Entry is free but timed entry booking is required. The rose windows — the circular stained glass windows — date from the 13th century and survived the fire. The cathedral sits on the Île de la Cité, the original island settlement of Paris, inhabited since 250BC." data-pt="A entrada é gratuita, mas é necessário reservar horário. As janelas em rosácea — as janelas circulares de vitral — datam do século XIII e sobreviveram ao incêndio. A catedral fica na Île de la Cité, o assentamento original de Paris, habitado desde 250 a.C.">Free entry, book timed slot. The rose windows survived the fire. Île de la Cité inhabited since 250BC.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Notre-Dame+Cathedral+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s5_5"><div class="stop-header" onclick="toggleStop('s5_5')"><div class="stop-check" onclick="checkStop(event,'s5_5')"></div><div class="stop-name" data-en="Musée d'Orsay — exterior and walk" data-pt="Musée d'Orsay — exterior e caminhada">Musée d'Orsay — exterior</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="A stunning 19th-century railway station converted into the world's greatest Impressionist museum — Monet, Renoir, Van Gogh, Degas all represented. It is listed as exterior only in your itinerary, but if you have energy after the Louvre, the d'Orsay is closed Mondays and the interior is worth a separate visit." data-pt="Uma deslumbrante estação ferroviária do século XIX convertida no maior museu impressionista do mundo — Monet, Renoir, Van Gogh, Degas todos representados. Está listado como apenas exterior no seu roteiro, mas se você tiver energia após o Louvre, o d'Orsay fecha às segundas e o interior vale uma visita separada.">Beautiful converted railway station. World's greatest Impressionist collection. Worth a visit if you have energy.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Musee+d'Orsay+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s5_6"><div class="stop-header" onclick="toggleStop('s5_6')"><div class="stop-check" onclick="checkStop(event,'s5_6')"></div><div class="stop-name" data-en="Jardim de Luxemburgo" data-pt="Jardim de Luxemburgo">Jardim de Luxemburgo</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Created in 1612 for Marie de Medici. One of the most beloved parks in Paris — students from the nearby Sorbonne, families, and chess players all coexist peacefully here. The formal French garden around the central pond is surrounded by 106 statues." data-pt="Criado em 1612 para Maria de Médici. Um dos parques mais amados de Paris — estudantes da Sorbonne próxima, famílias e jogadores de xadrez coexistem pacificamente aqui. O jardim formal francês ao redor do lago central é cercado por 106 estátuas.">Created 1612. Sorbonne students, families, chess players. 106 statues around the central pond.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The small green metal chairs around the pond are iconic. Grab one and sit by the water. Parisians have been renting these exact chairs since the 19th century. It is a quintessentially Parisian thing to do." data-pt="As pequenas cadeiras de metal verde ao redor do lago são icônicas. Pegue uma e sente perto da água. Os parisienses alugam essas mesmas cadeiras desde o século XIX. É uma coisa quintessencialmente parisiense de se fazer.">The green metal chairs by the pond are iconic. Sitting there is a quintessentially Parisian thing to do.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Jardin+du+Luxembourg+Paris" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="eat-block" id="eat5"><div class="eat-header" onclick="toggleEat('eat5')"><span class="eat-title" data-en="🍴 What to Eat Today" data-pt="🍴 O Que Comer Hoje">🍴 What to Eat Today</span><span class="eat-arrow">▼</span></div><div class="eat-body"><div class="eat-rule"></div>
+        <div class="eat-item"><span class="eat-emoji">🥩</span><div><span class="eat-text"><strong data-en="La Bourse et la Vie — best steak frites near the Louvre" data-pt="La Bourse et la Vie — melhor steak frites perto do Louvre">La Bourse et la Vie</strong></span><a href="https://www.google.com/maps/search/?api=1&query=La+Bourse+et+la+Vie+12+Rue+Vivienne+Paris" class="eat-where" target="_blank" data-en="📍 12 Rue Vivienne, 2nd · One of the best steak frites in Paris, beloved by locals and critics. Small, classic, unfussy. Book ahead — fills up every single day." data-pt="📍 12 Rue Vivienne, 2° · Um dos melhores steak frites de Paris, amado por locais e críticos. Pequeno, clássico, sem frescura. Reserve — lota todos os dias.">📍 12 Rue Vivienne, 2nd · Best steak frites near Louvre. Book ahead.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">☕</span><div><span class="eat-text"><strong data-en="Café de Flore — Saint-Germain institution" data-pt="Café de Flore — instituição do Saint-Germain">Café de Flore</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Café+de+Flore+172+Boulevard+Saint-Germain+Paris" class="eat-where" target="_blank" data-en="📍 172 Bd Saint-Germain, 6th · Coffee and croissant on the terrace. The atmosphere is worth the slightly elevated price. Hemingway, Sartre and de Beauvoir all drank here. Go for coffee, not a full meal." data-pt="📍 172 Bd Saint-Germain, 6° · Café e croissant na varanda. A atmosfera vale o preço um pouco mais alto. Hemingway, Sartre e de Beauvoir bebiam aqui. Vá para café, não refeição completa.">📍 172 Bd Saint-Germain · Hemingway drank here. Coffee and croissant, not a full meal.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Pitanga — Brazilian tapas, 5 min from the Louvre" data-pt="Pitanga — tapas brasileiras, 5 min do Louvre">Pitanga</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Pitanga+11+Rue+Jean-Jacques+Rousseau+Paris" class="eat-where" target="_blank" data-en="📍 11 Rue Jean-Jacques Rousseau, 1st · 5 min from the Louvre exit. Brazilian small plates with a French twist by a Ducasse-trained chef. Picanha with cassava fries is outstanding. Book ahead." data-pt="📍 11 Rue Jean-Jacques Rousseau, 1° · 5 min da saída do Louvre. Petiscos brasileiros com toque francês por chef formado com Ducasse. Picanha com fritas de mandioca é imperdível. Reserve.">📍 11 Rue Jean-Jacques Rousseau · 5 min from Louvre. Ducasse-trained chef, picanha outstanding.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Uma Nota — Brazilian-Japanese, 2nd arr." data-pt="Uma Nota — brasileiro-japonês, 2° arr.">Uma Nota</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Uma+Nota+86+Rue+Reaumur+Paris" class="eat-where" target="_blank" data-en="📍 86 Rue Réaumur, 2nd · Near the Louvre. Brazilian street food with Japanese influences — ceviche, chicken coxinhas, beef ribs, creative caipirinhas. Lively, festive, great cocktails. Book ahead." data-pt="📍 86 Rue Réaumur, 2° · Perto do Louvre. Street food brasileiro com influências japonesas — ceviche, coxinhas, costelas, caipirinhas criativas. Animado, festivo, ótimos drinques. Reserve.">📍 86 Rue Réaumur, 2nd · Near Louvre. Brazilian-Japanese street food, creative caipirinhas. Book ahead.</a></div></div>
+      </div></div>
+        <div class="eat-item"><span class="eat-emoji">☕</span><div><span class="eat-text"><strong data-en="Café de Flore — Saint-Germain institution" data-pt="Café de Flore — instituição do Saint-Germain">Café de Flore</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Café+de+Flore+172+Boulevard+Saint-Germain+Paris" class="eat-where" target="_blank" data-en="📍 172 Bd Saint-Germain, 6th · Coffee and croissant on the terrace. The atmosphere is worth the slightly elevated price. Hemingway, Sartre and de Beauvoir all drank here. Go for coffee, not a full meal." data-pt="📍 172 Bd Saint-Germain, 6° · Café e croissant na varanda. A atmosfera vale o preço um pouco mais alto. Hemingway, Sartre e de Beauvoir bebiam aqui. Vá para café, não refeição completa.">📍 172 Bd Saint-Germain · Hemingway drank here. Coffee and croissant, not a full meal.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Pitanga — Brazilian tapas, 5 min from the Louvre" data-pt="Pitanga — tapas brasileiras, 5 min do Louvre">Pitanga</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Pitanga+11+Rue+Jean-Jacques+Rousseau+Paris" class="eat-where" target="_blank" data-en="📍 11 Rue Jean-Jacques Rousseau, 1st · 5 min walk from the Louvre exit. Brazilian small plates with a French twist by a Ducasse-trained chef. Picanha with cassava fries is outstanding. Book ahead." data-pt="📍 11 Rue Jean-Jacques Rousseau, 1° · 5 min da saída do Louvre. Petiscos brasileiros com toque francês de um chef formado com Ducasse. Picanha com fritas de mandioca é imperdível. Reserve.">📍 11 Rue Jean-Jacques Rousseau · 5 min from Louvre. Ducasse-trained chef, picanha outstanding.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🇧🇷</span><div><span class="eat-text"><strong data-en="Brasileirinho — for dinner, 17th arr." data-pt="Brasileirinho — para o jantar, 17° arr.">Brasileirinho — dinner</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Brasileirinho+129+Rue+Legendre+Paris+17" class="eat-where" target="_blank" data-en="📍 129 Rue Legendre, 17th · 20 min by Métro. Traditional feijoada, picanha, regional dishes from across Brazil. Friday and Saturday has live bossa nova music. Must reserve." data-pt="📍 129 Rue Legendre, 17° · 20 min de Metrô. Feijoada tradicional, picanha, pratos regionais de todo o Brasil. Sexta e sábado tem música bossa nova ao vivo. Reserve.">📍 129 Rue Legendre · 20 min by Métro. Feijoada, live bossa nova Fri/Sat. Reserve.</a></div></div>
+      </div></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="What was the Louvre like? Notre-Dame? The river walk..." data-placeholder-pt="Como foi o Louvre? Notre-Dame? A caminhada pelo rio..." data-day="5" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 6: VERSAILLES -->
+  <div class="day-card" id="day6"><button class="day-trigger" onclick="toggleDay('day6')"><span class="day-num">06</span><div class="day-info"><div class="day-name" data-en="Versailles 👑" data-pt="Versalhes 👑">Versailles 👑</div><div class="day-focus" data-en="Full day — leave by 9am, RER C" data-pt="Dia inteiro — saia às 9h, RER C">Full day — leave by 9am, RER C</div><div class="day-weekday" data-en="Sunday, 24 May" data-pt="Domingo, 24 de Maio">Sunday, 24 May</div></div><div class="day-badge"><span class="day-check-count" id="day6-count"></span><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+
+      <div class="stop" id="s6_1"><div class="stop-header" onclick="toggleStop('s6_1')"><div class="stop-check" onclick="checkStop(event,'s6_1')"></div><div class="stop-name" data-en="Getting There — RER C" data-pt="Como Chegar — RER C">Getting There — RER C</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ The Plan" data-pt="✦ O Plano">✦ The Plan</span><p class="detail-text" data-en="Walk 15 minutes from the hotel to Champ de Mars — Tour Eiffel RER C station. Take the RER C direction Versailles-Château Rive Gauche. Journey is about 35 minutes and costs nothing extra on your Navigo pass. Leave by 9am. Buy Palace tickets online beforehand — on-the-day queues exceed 2 hours." data-pt="Caminhe 15 minutos do hotel até a estação Champ de Mars — Tour Eiffel do RER C. Pegue o RER C sentido Versailles-Château Rive Gauche. Trajeto de cerca de 35 minutos e não custa nada extra no passe Navigo. Saia às 9h. Compre os ingressos do Palácio online com antecedência — filas no dia ultrapassam 2 horas.">15 min walk to Champ de Mars RER C. Direction Versailles-Château. 35 min. Leave 9am sharp.</p></div></div></div>
+
+      <div class="stop" id="s6_2"><div class="stop-header" onclick="toggleStop('s6_2')"><div class="stop-check" onclick="checkStop(event,'s6_2')"></div><div class="stop-name" data-en="Hall of Mirrors" data-pt="Galeria dos Espelhos">Hall of Mirrors</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="73 metres long, 357 mirrors, and 20,000 candles when fully lit. Built by Louis XIV to demonstrate the wealth and power of France. The Treaty of Versailles ending World War I was signed in this room in 1919. The German Empire was also proclaimed here in 1871 — the French made them sign the peace treaty in the same room on purpose, 48 years later." data-pt="73 metros de comprimento, 357 espelhos e 20.000 velas quando totalmente iluminada. Construída por Luís XIV para demonstrar a riqueza e o poder da França. O Tratado de Versalhes que encerrou a Primeira Guerra Mundial foi assinado nesta sala em 1919. O Império Alemão também foi proclamado aqui em 1871 — os franceses fizeram com que assinassem o tratado de paz na mesma sala de propósito, 48 anos depois.">WWI peace treaty signed here. The German Empire was proclaimed here in 1871 — France made them sign the peace in the same room 48 years later.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The mirrors were considered scandalously luxurious at the time — mirrors were extremely expensive in the 17th century and showing 357 of them was pure provocation to the rest of Europe. The room faces west so the afternoon light through the windows is spectacular." data-pt="Os espelhos eram considerados escandalosamente luxuosos na época — espelhos eram extremamente caros no século XVII e mostrar 357 deles era pura provocação para o resto da Europa. A sala fica voltada para o oeste, então a luz da tarde pelas janelas é espetacular.">357 mirrors was pure provocation in 1678 — mirrors were extremely expensive. Best afternoon light.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Hall+of+Mirrors+Versailles" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s6_3"><div class="stop-header" onclick="toggleStop('s6_3')"><div class="stop-check" onclick="checkStop(event,'s6_3')"></div><div class="stop-name" data-en="Petit Trianon — Marie Antoinette's escape" data-pt="Petit Trianon — o refúgio de Maria Antonieta">Petit Trianon — Marie Antoinette's escape</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label hist" data-en="📜 History" data-pt="📜 História">📜 History</span><p class="detail-text" data-en="Marie Antoinette's private retreat from the formality and etiquette of the main palace. She was given it by Louis XVI as a gift and spent as much time here as possible. The scale is intimate — it feels like a real house rather than a royal palace, which was precisely the point." data-pt="O retiro privado de Maria Antonieta da formalidade e etiqueta do palácio principal. Ela o recebeu de Luís XVI como presente e passava o máximo de tempo possível aqui. A escala é intimista — parece uma casa de verdade em vez de um palácio real, o que era exatamente a intenção.">Marie Antoinette's private retreat. She designed it to feel like a real house, not a palace. Far fewer crowds.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="Behind the Petit Trianon, Marie Antoinette had a fake village built called the Hameau de la Reine — a working farm with real animals and peasant cottages where she could pretend to be an ordinary person. It sounds absurd. Standing in it is genuinely moving." data-pt="Atrás do Petit Trianon, Maria Antonieta mandou construir uma aldeia falsa chamada Hameau de la Reine — uma fazenda real com animais de verdade e cabanas camponesas onde ela podia fingir ser uma pessoa comum. Parece absurdo. Estar lá é genuinamente comovente.">She had a fake peasant village built behind it so she could pretend to be ordinary. Standing in it is genuinely moving.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Petit+Trianon+Versailles" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="stop" id="s6_4"><div class="stop-header" onclick="toggleStop('s6_4')"><div class="stop-check" onclick="checkStop(event,'s6_4')"></div><div class="stop-name" data-en="The Gardens — rent a bicycle" data-pt="Os Jardins — alugue uma bicicleta">The Gardens — rent a bicycle</div><span class="stop-expand">▾ INFO</span></div><div class="stop-details"><div class="detail-rule"></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Did You Know" data-pt="✦ Você Sabia">✦ Did You Know</span><p class="detail-text" data-en="The gardens cover 800 hectares — larger than the entire 8th arrondissement of Paris. Rent a bicycle or golf cart at the entrance. Most visitors only see the formal gardens near the palace. The Grand Canal, the outer bosquets, and the area around the Trianons are completely different in character and almost empty." data-pt="Os jardins cobrem 800 hectares — maiores do que todo o 8° arrondissement de Paris. Alugue uma bicicleta ou carrinho de golfe na entrada. A maioria dos visitantes só vê os jardins formais perto do palácio. O Grande Canal, os bosquetes externos e a área ao redor dos Trianons são completamente diferentes e quase vazios.">800 hectares. Rent a bicycle. Most visitors miss the Grand Canal and outer areas — almost nobody goes there.</p></div><div class="detail-block"><span class="detail-label fact" data-en="✦ Picnic" data-pt="✦ Piquenique">✦ Picnic</span><p class="detail-text" data-en="The on-site restaurants are overpriced and mediocre. Stop at a boulangerie near the hotel the morning before, buy bread, cheese, and something cold, and have a picnic on the garden lawn by the Grand Canal. This is exactly what the French do here and it will be one of the best meals of the trip." data-pt="Os restaurantes no local são caros e medíocres. Pare em uma padaria perto do hotel de manhã, compre pão, queijo e algo gelado, e faça um piquenique no gramado do jardim perto do Grande Canal. É exatamente o que os franceses fazem aqui e será uma das melhores refeições da viagem.">Bring a picnic. It will be one of the best meals of the trip.</p></div><a href="https://www.google.com/maps/search/?api=1&query=Versailles+Gardens" class="map-btn" target="_blank" data-en="📍 Take Me There" data-pt="📍 Leve-me Até Lá">📍 Take Me There</a></div></div>
+
+      <div class="eat-block" id="eat6"><div class="eat-header" onclick="toggleEat('eat6')"><span class="eat-title" data-en="🍴 What to Eat Today" data-pt="🍴 O Que Comer Hoje">🍴 What to Eat Today</span><span class="eat-arrow">▼</span></div><div class="eat-body"><div class="eat-rule"></div>
+        <div class="eat-item"><span class="eat-emoji">🥖</span><div><span class="eat-text"><strong data-en="Picnic on the Grand Canal lawn — the right way" data-pt="Piquenique na grama do Grande Canal — do jeito certo">Picnic on the Grand Canal lawn</strong></span><a class="eat-where" data-en="📍 Buy from a boulangerie near the hotel before leaving — baguette, cheese, charcuterie, something cold. Eat on the grass by the Grand Canal. This is exactly what the French do here and it will be one of the best meals of the trip." data-pt="📍 Compre em uma padaria perto do hotel antes de sair — baguete, queijo, frios, algo gelado. Coma na grama perto do Grande Canal. É exatamente o que os franceses fazem aqui e será uma das melhores refeições da viagem.">📍 Buy from boulangerie before leaving. Eat on the grass by the Grand Canal. Best meal of the trip.</a></div></div>
+        <div class="eat-item"><span class="eat-emoji">🍽️</span><div><span class="eat-text"><strong data-en="Ore — Ducasse restaurant inside the Palace" data-pt="Ore — restaurante do Ducasse dentro do Palácio">Ore — inside the Palace</strong></span><a href="https://www.google.com/maps/search/?api=1&query=Ore+restaurant+Versailles" class="eat-where" target="_blank" data-en="📍 Pavillon Dufour, Palace of Versailles · Alain Ducasse at Versailles. The most prestigious on-site option. Worth booking for a special lunch if budget allows — the setting inside the palace is extraordinary." data-pt="📍 Pavillon Dufour, Palácio de Versalhes · Alain Ducasse em Versalhes. A opção mais prestigiosa no local. Vale reservar para um almoço especial se o orçamento permitir — o ambiente dentro do palácio é extraordinário.">📍 Pavillon Dufour · Ducasse at Versailles. Special occasion lunch. Book ahead.</a></div></div>
+      </div></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="Hall of Mirrors, Marie Antoinette's village, the gardens..." data-placeholder-pt="Galeria dos Espelhos, aldeia de Maria Antonieta, os jardins..." data-day="6" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+  <!-- DAY 7: DEPARTURE -->
+  <div class="day-card" id="day7"><button class="day-trigger" onclick="toggleDay('day7')"><span class="day-num">07</span><div class="day-info"><div class="day-name" data-en="À bientôt, Paris" data-pt="À bientôt, Paris">À bientôt, Paris</div><div class="day-focus" data-en="Until next time, Vivi" data-pt="Até a próxima, Vivi">Until next time, Vivi</div><div class="day-weekday" data-en="Monday, 25 May" data-pt="Segunda-feira, 25 de Maio">Monday, 25 May</div></div><div class="day-badge"><div class="day-arrow">▼</div></div></button>
+    <div class="day-body"><div class="day-divider"></div>
+      <div class="day-notes-only"><p data-en="Last morning in Paris. If checkout allows, one final coffee at a local café. Take a last walk. Breathe it in. Paris has a way of getting under your skin — you will be back." data-pt="Última manhã em Paris. Se o checkout permitir, um último café em um café local. Dê uma última caminhada. Respire. Paris tem uma forma de entrar na pele — você vai voltar.">Last morning in Paris. One final coffee. Take a last walk. You will be back.</p></div>
+      <div class="notes-wrap"><span class="notes-label" data-en="Notes" data-pt="Anotações">Notes</span><textarea class="notes-area" data-placeholder-en="Best memory. What you will miss. What you want to do when you come back..." data-placeholder-pt="Melhor memória. O que vai sentir saudade. O que quer fazer quando voltar..." data-day="7" oninput="saveNote(this)"></textarea></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══ GOOD TO KNOW ═══ -->
+<div class="section-rule"></div>
+<div class="section-header" id="insider">
+  <div class="section-tag" data-en="The Insider Version" data-pt="A Versão de Quem Sabe">The Insider Version</div>
+  <h2 class="section-title" data-en="Good to <em>Know</em>" data-pt="Bom <em>Saber</em>">Good to <em>Know</em></h2>
+  <p class="section-intro-text" data-en="The things guidebooks miss or refuse to say." data-pt="As coisas que os guias ignoram ou não têm coragem de falar.">The things guidebooks miss.</p>
+</div>
+<div class="gtk-grid">
+
+  <div class="gtk-card" id="gtk1"><button class="gtk-trigger" onclick="toggleGtk('gtk1')"><div class="gtk-emoji">👋</div><div class="gtk-info"><div class="gtk-title" data-en="The Bonjour Rule" data-pt="A Regra do Bonjour">The Bonjour Rule</div><div class="gtk-sub" data-en="The single most important thing" data-pt="A coisa mais importante de todas">The single most important thing</div></div><div class="gtk-arrow">▼</div></button><div class="gtk-body"><div class="gtk-rule"></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Always say Bonjour when entering anywhere" data-pt="Sempre diga Bonjour ao entrar em qualquer lugar">Always say Bonjour when entering</strong><span data-en="Shop, restaurant, café, asking for directions — always start with Bonjour. Not saying it is considered genuinely rude by Parisians. Saying it properly changes every interaction." data-pt="Loja, restaurante, café, pedir informações — sempre comece com Bonjour. Não dizer é considerado grosseria pelos parisienses. Dizer corretamente muda cada interação.">Bonjour opens every door. Not saying it closes them.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="And Merci when you leave" data-pt="E Merci quando sair">And Merci when you leave</strong><span data-en="Bonjour when you enter, Merci when you leave. Two words. That is the entire etiquette code." data-pt="Bonjour ao entrar, Merci ao sair. Duas palavras. Esse é todo o código de etiqueta.">Bonjour in. Merci out. Two words. That is the entire code.</span></div></div>
+  </div></div>
+
+  <div class="gtk-card" id="gtk2"><button class="gtk-trigger" onclick="toggleGtk('gtk2')"><div class="gtk-emoji">🚇</div><div class="gtk-info"><div class="gtk-title" data-en="Métro Survival" data-pt="Sobrevivência no Metrô">Métro Survival</div><div class="gtk-sub" data-en="The unwritten rules" data-pt="As regras não escritas">The unwritten rules</div></div><div class="gtk-arrow">▼</div></button><div class="gtk-body"><div class="gtk-rule"></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Let people off before you get on" data-pt="Deixe as pessoas saírem antes de entrar">Let people off first</strong><span data-en="Stand to the side, let everyone off, then board. This is not a suggestion." data-pt="Fique do lado, deixe todo mundo sair, depois entre. Isso não é sugestão.">Stand aside, let everyone off, then board. Not optional.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Line 6 gives Eiffel Tower views from the train" data-pt="A Linha 6 dá vistas da Torre Eiffel de dentro do trem">Line 6: Eiffel Tower views from the train</strong><span data-en="Between Bir-Hakeim and Passy, Line 6 runs elevated above the Seine. The Eiffel Tower view from inside the moving train is one of the best free sights in Paris." data-pt="Entre Bir-Hakeim e Passy, a Linha 6 corre elevada acima do Sena. A vista da Torre Eiffel de dentro do trem em movimento é uma das melhores vistas gratuitas de Paris.">Between Bir-Hakeim and Passy — elevated views of the Eiffel Tower from the train. Free.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Download maps offline before you travel" data-pt="Baixe os mapas offline antes de viajar">Download maps offline before you travel</strong><span data-en="Métro signal is unreliable underground. Download Paris on Google Maps offline. Use the Bonjour RATP app for public transport navigation." data-pt="O sinal no metrô é pouco confiável no subsolo. Baixe Paris no Google Maps offline. Use o app Bonjour RATP para navegação no transporte público.">Download Paris offline on Google Maps. Metro signal underground is unreliable.</span></div></div>
+  </div></div>
+
+  <div class="gtk-card" id="gtk3"><button class="gtk-trigger" onclick="toggleGtk('gtk3')"><div class="gtk-emoji">🍽️</div><div class="gtk-info"><div class="gtk-title" data-en="Eating Like a Parisian" data-pt="Comer Como um Parisiense">Eating Like a Parisian</div><div class="gtk-sub" data-en="What locals actually do" data-pt="O que os locais fazem de verdade">What locals actually do</div></div><div class="gtk-arrow">▼</div></button><div class="gtk-body"><div class="gtk-rule"></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Never eat at restaurants right next to landmarks" data-pt="Nunca coma em restaurantes logo ao lado dos pontos turísticos">Never eat next to landmarks</strong><span data-en="Eiffel Tower, Louvre, Notre-Dame — the restaurants right outside are almost universally mediocre and overpriced. Walk two streets in any direction and the food improves dramatically." data-pt="Torre Eiffel, Louvre, Notre-Dame — os restaurantes logo do lado de fora são quase todos medíocres e caros. Ande duas ruas em qualquer direção e a comida melhora dramaticamente.">Walk two streets from any landmark. Quality rises, prices drop immediately.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="The curved croissants are butter — the straight ones are not" data-pt="Os croissants curvados são de manteiga — os retos não são">Curved croissants = butter. Straight = not.</strong><span data-en="A croissant au beurre is made with real butter and tastes completely different. They are always the curved ones. The straight ones are made with margarine. Now you know." data-pt="Um croissant au beurre é feito com manteiga de verdade e tem um sabor completamente diferente. São sempre os curvados. Os retos são feitos com margarina.">This is how you tell. Always get the curved one.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="The set lunch menu is always better value" data-pt="O menu de almoço fixo é sempre melhor custo-benefício">The set lunch menu is always better value</strong><span data-en="Most Parisian restaurants offer a formule du midi — a set 2 or 3 course lunch menu at a fraction of the à la carte price. Always ask for it." data-pt="A maioria dos restaurantes parisienses oferece uma formule du midi — um menu de almoço de 2 ou 3 pratos a uma fração do preço à la carte. Sempre peça.">Ask for the formule du midi. Same food, much cheaper at lunch.</span></div></div>
+  </div></div>
+
+  <div class="gtk-card" id="gtk4"><button class="gtk-trigger" onclick="toggleGtk('gtk4')"><div class="gtk-emoji">💡</div><div class="gtk-info"><div class="gtk-title" data-en="Things That Will Catch You Off Guard" data-pt="Coisas Que Vão Te Pegar de Surpresa">Things That Will Catch You Off Guard</div><div class="gtk-sub" data-en="The honest list" data-pt="A lista honesta">The honest list</div></div><div class="gtk-arrow">▼</div></button><div class="gtk-body"><div class="gtk-rule"></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Museums have specific closing days" data-pt="Museus têm dias específicos de fechamento">Museums have specific closing days</strong><span data-en="Louvre: closed Tuesdays. Musée d'Orsay: closed Mondays. Versailles: closed Mondays. Check before you go." data-pt="Louvre: fecha terças. Musée d'Orsay: fecha segundas. Versalhes: fecha segundas. Verifique antes de ir.">Louvre: Tuesdays. d'Orsay: Mondays. Versailles: Mondays. Plan around this.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="Paris is enormous on foot" data-pt="Paris é enorme a pé">Paris is enormous on foot</strong><span data-en="What looks like a short distance on the map can be 45 minutes of walking. Always check Google Maps walking time before deciding to walk. The Métro is often faster and always less tiring." data-pt="O que parece uma distância curta no mapa pode ser 45 minutos de caminhada. Sempre verifique o tempo de caminhada no Google Maps antes de decidir ir a pé. O Metrô geralmente é mais rápido e sempre menos cansativo.">Check walking time on Maps first. 2km on the map can be 45 minutes on foot.</span></div></div>
+    <div class="gtk-item"><div class="gtk-dot"></div><div class="gtk-text"><strong data-en="The Eiffel Tower light show is not a tourist trap — it is genuinely magical" data-pt="O show de luzes da Torre Eiffel não é uma armadilha turística — é genuinamente mágico">The Eiffel Tower light show is not a tourist trap</strong><span data-en="Every hour on the hour from dusk until 1am, the tower sparkles for 5 minutes. Watch it from the Campo de Marte with wine and a blanket. Everyone dismisses it as cheesy until they actually see it." data-pt="De hora em hora do anoitecer até 1h, a torre brilha por 5 minutos. Assista do Campo de Marte com vinho e uma manta. Todos acham brega até realmente verem.">Every hour until 1am. Watch from Champ de Mars with wine. Everyone thinks it's cheesy until they see it.</span></div></div>
+  </div></div>
+
+</div>
+
+<!-- ═══ FRENCH PHRASES ═══ -->
+<div class="section-rule"></div>
+<div class="section-header" id="phrases">
+  <div class="section-tag" data-en="Speak Like a Local" data-pt="Fale Como um Local">Speak Like a Local</div>
+  <h2 class="section-title" data-en="A Few Words of <em>French</em>" data-pt="Algumas Palavras em <em>Francês</em>">A Few Words of <em>French</em></h2>
+  <p class="section-intro-text" data-en="You do not need to speak French. But a few words go a very long way in Paris. Press 🔊 to hear it spoken in French." data-pt="Você não precisa falar francês. Mas algumas palavras fazem uma enorme diferença em Paris. Pressione 🔊 para ouvir em francês.">A few words go a very long way. Press 🔊 to hear.</p>
+</div>
+<div class="phrases-list" id="phrasesList"></div>
+
+<div class="completion-msg" id="completionMsg">
+  <h2 data-en="Paris, conquered." data-pt="Paris, conquistada.">Paris, conquered.</h2>
+  <p data-en="Every stop visited. Every moment lived. À bientôt, Paris." data-pt="Cada parada visitada. Cada momento vivido. À bientôt, Paris.">Every stop visited. Every moment lived.</p>
+</div>
+
+<div class="footer">
+  <div data-en="Vivi's Paris Rendez-vous · May 2026" data-pt="O Rendez-vous Parisiense da Vivi · Maio 2026">Vivi's Paris Rendez-vous · May 2026</div>
+  <div data-en="Made with love by Claudio Saroldi" data-pt="Feito com amor por Claudio Saroldi">Made with love by Claudio Saroldi</div>
+</div>
+
+<!-- DOCK -->
+<nav class="dock">
+  <a href="#top" data-dock="top"><span class="dock-icon">🗼</span><span data-en="Home" data-pt="Início">Home</span></a>
+  <a href="#essentials" data-dock="essentials"><span class="dock-icon">🗺️</span><span data-en="Before" data-pt="Antes">Before</span></a>
+  <a href="#itinerary" data-dock="itinerary"><span class="dock-icon">📅</span><span data-en="Days" data-pt="Dias">Days</span></a>
+  <a href="#insider" data-dock="insider"><span class="dock-icon">💡</span><span data-en="Tips" data-pt="Dicas">Tips</span></a>
+  <a href="#phrases" data-dock="phrases"><span class="dock-icon">🗣️</span><span data-en="French" data-pt="Francês">French</span></a>
+</nav>
+
+<script>
+const STORAGE_KEY='vivi_paris_stops';
+const NOTES_KEY='vivi_paris_notes';
+let currentLang=localStorage.getItem('vivi_paris_lang')||'en';
+
+const DAY_STOPS={
+  'day2':['s2_1','s2_2','s2_3','s2_4','s2_5','s2_6'],
+  'day4':['s4_1','s4_2','s4_3','s4_4','s4_5','s4_6','s4_7','s4_8','s4_9'],
+  'day5':['s5_1','s5_2','s5_3','s5_4','s5_5','s5_6'],
+  'day6':['s6_1','s6_2','s6_3','s6_4']
+};
+const ALL_STOPS=[...Object.values(DAY_STOPS).flat(),'s3_1','s3_2','s3_3','s3_4','s3_5','s3_6'];
+const VIVI_STOPS=ALL_STOPS;
+
+const DAY_META=[
+  {id:'day1',en:{name:'Day 1 · Arrival',tag:'From London. Paris is waiting.'},pt:{name:'Dia 1 · Chegada',tag:'De Londres. Paris espera.'}},
+  {id:'day2',en:{name:'Day 2 · The Iron Lady',tag:'Eiffel Tower, Trocadéro, Campo de Marte.'},pt:{name:'Dia 2 · A Dama de Ferro',tag:'Torre Eiffel, Trocadéro, Campo de Marte.'}},
+  {id:'day3',en:{name:'Day 3 · Disneyland',tag:'Full day. Leave by 8:30am. RER A.'},pt:{name:'Dia 3 · Disneyland',tag:'Dia inteiro. Saia às 8h30. RER A.'}},
+  {id:'day4',en:{name:'Day 4 · The Grand Boulevard',tag:'Arc de Triomphe, Champs-Élysées, Opéra.'},pt:{name:'Dia 4 · O Grande Bulevar',tag:'Arco do Triunfo, Champs-Élysées, Ópera.'}},
+  {id:'day5',en:{name:'Day 5 · River and Masters',tag:'Louvre, Seine walk, Notre-Dame.'},pt:{name:'Dia 5 · Rio e Mestres',tag:'Louvre, caminhada pelo Sena, Notre-Dame.'}},
+  {id:'day6',en:{name:'Day 6 · Versailles',tag:'Full day. Leave by 9am. RER C.'},pt:{name:'Dia 6 · Versalhes',tag:'Dia inteiro. Saia às 9h. RER C.'}},
+  {id:'day7',en:{name:'Day 7 · Departure',tag:'À bientôt, Paris.'},pt:{name:'Dia 7 · Partida',tag:'À bientôt, Paris.'}}
+];
+
+const PHRASES=[
+  {fr:'Bonjour',pt:'Bom dia / Olá',m:{en:'Hello / Good morning — say this everywhere',pt:'Olá / Bom dia — diga isso em todo lugar'}},
+  {fr:'Bonsoir',pt:'Boa noite',m:{en:'Good evening',pt:'Boa noite'}},
+  {fr:'Merci',pt:'Obrigado/a',m:{en:'Thank you',pt:'Obrigado/a'}},
+  {fr:'Merci beaucoup',pt:'Muito obrigado/a',m:{en:'Thank you very much',pt:'Muito obrigado/a'}},
+  {fr:"S'il vous plaît",pt:'Por favor',m:{en:'Please',pt:'Por favor'}},
+  {fr:'Excusez-moi',pt:'Com licença / Desculpe',m:{en:'Excuse me',pt:'Com licença / Desculpe'}},
+  {fr:'Parlez-vous anglais ?',pt:'Você fala inglês?',m:{en:'Do you speak English?',pt:'Você fala inglês?'}},
+  {fr:'Je ne parle pas français',pt:'Eu não falo francês',m:{en:'I do not speak French',pt:'Eu não falo francês'}},
+  {fr:"Une table pour trois, s'il vous plaît",pt:'Uma mesa para três, por favor',m:{en:'A table for three, please',pt:'Uma mesa para três, por favor'}},
+  {fr:"La carte, s'il vous plaît",pt:'O cardápio, por favor',m:{en:'The menu, please',pt:'O cardápio, por favor'}},
+  {fr:'Je voudrais…',pt:'Eu gostaria de…',m:{en:'I would like… (works for anything)',pt:'Eu gostaria de… (funciona para tudo)'}},
+  {fr:"Trois bières, s'il vous plaît",pt:'Três cervejas, por favor',m:{en:'Three beers, please',pt:'Três cervejas, por favor'}},
+  {fr:"L'addition, s'il vous plaît",pt:'A conta, por favor',m:{en:'The bill, please',pt:'A conta, por favor'}},
+  {fr:'C\'est délicieux !',pt:'Está delicioso!',m:{en:'This is delicious!',pt:'Está delicioso!'}},
+  {fr:'Où sont les toilettes ?',pt:'Onde ficam os banheiros?',m:{en:'Where are the toilets?',pt:'Onde ficam os banheiros?'}},
+  {fr:'Où est le métro ?',pt:'Onde fica o metrô?',m:{en:'Where is the metro?',pt:'Onde fica o metrô?'}},
+  {fr:'C\'est loin ?',pt:'É longe?',m:{en:'Is it far?',pt:'É longe?'}},
+  {fr:'À pied ?',pt:'A pé?',m:{en:'On foot?',pt:'A pé?'}},
+  {fr:'Combien ça coûte ?',pt:'Quanto custa?',m:{en:'How much does it cost?',pt:'Quanto custa?'}},
+  {fr:'Je prends ça',pt:'Vou levar esse/essa',m:{en:'I will take this',pt:'Vou levar esse/essa'}},
+  {fr:'Par carte',pt:'No cartão',m:{en:'By card',pt:'No cartão'}}
+];
+
+function buildPhrases(){
+  document.getElementById('phrasesList').innerHTML=PHRASES.map(p=>`<div class="phrase-card"><div class="phrase-content"><div class="phrase-fr">${p.fr}</div><div class="phrase-pt">${p.pt}</div><div class="phrase-meaning">${p.m[currentLang]}</div></div><button class="speak-btn" onclick="speak('${p.fr.replace(/'/g,"\\'")}')">🔊</button></div>`).join('');
+}
+
+function speak(text){
+  if('speechSynthesis' in window){
+    try{
+      window.speechSynthesis.cancel();
+      const u=new SpeechSynthesisUtterance(text);
+      u.lang='fr-FR';
+      u.rate=0.88;
+      u.pitch=1.0;
+      const voices=window.speechSynthesis.getVoices();
+      const preferred=['Thomas','Amelie','Marie','Virginie'];
+      let voice=null;
+      for(const name of preferred){voice=voices.find(v=>v.name.includes(name));if(voice)break;}
+      if(!voice) voice=voices.find(v=>v.lang==='fr-FR'||v.lang==='fr_FR');
+      if(!voice) voice=voices.find(v=>v.lang&&v.lang.toLowerCase().startsWith('fr'));
+      if(voice) u.voice=voice;
+      window.speechSynthesis.speak(u);
+      return;
+    }catch(err){}
+  }
+}
+if('speechSynthesis' in window){window.speechSynthesis.getVoices();window.speechSynthesis.onvoiceschanged=()=>window.speechSynthesis.getVoices();}
+
+function toggleDay(id){document.getElementById(id).classList.toggle('open')}
+function toggleStop(id){document.getElementById(id).querySelector('.stop-details').classList.toggle('open')}
+function toggleEat(id){document.getElementById(id).classList.toggle('open')}
+function toggleEss(id){document.getElementById(id).classList.toggle('open')}
+function toggleGtk(id){document.getElementById(id).classList.toggle('open')}
+function checkStop(e,id){e.stopPropagation();document.getElementById(id).classList.toggle('checked');updateProgress();saveState()}
+
+function updateProgress(){
+  Object.entries(DAY_STOPS).forEach(([d,stops])=>{const done=stops.filter(id=>document.getElementById(id)?.classList.contains('checked')).length;const el=document.getElementById(d+'-count');if(el)el.textContent=done>0?done+'/'+stops.length:''});
+  const done=VIVI_STOPS.filter(id=>document.getElementById(id)?.classList.contains('checked')).length;
+  const msg=document.getElementById('completionMsg');
+  if(done===VIVI_STOPS.length&&VIVI_STOPS.length>0)msg.classList.add('show');else msg.classList.remove('show');
+  updateHero();
+}
+
+function updateHero(){
+  const done=VIVI_STOPS.filter(id=>document.getElementById(id)?.classList.contains('checked')).length;
+  const total=VIVI_STOPS.length;
+  const pEl=document.getElementById('heroProgress');
+  if(pEl)pEl.textContent=done+' / '+total;
+  const sub=document.getElementById('heroProgressSub');
+  if(sub){let txt;if(done===0)txt=currentLang==='pt'?'A sua lista está esperando.':'Your list is waiting.';else if(done===total)txt=currentLang==='pt'?'Tudo visitado. Incrível.':'Everything visited. Incredible.';else txt=currentLang==='pt'?done+' de '+total+' da sua lista.':done+' of '+total+' from your list.';sub.textContent=txt;}
+  updateCountdown();setupTodayCard();
+}
+
+function updateCountdown(){
+  const el=document.getElementById('heroCountdown');
+  const sub=document.getElementById('heroCountdownSub');
+  if(!el)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const arrival=new Date(2026,4,19);
+  const departure=new Date(2026,4,25);
+  const msDay=86400000;
+  if(today<arrival){
+    const days=Math.round((arrival-today)/msDay);
+    el.textContent=days;
+    if(sub)sub.textContent=currentLang==='pt'?(days===1?'dia para Paris.':'dias para Paris.'):(days===1?'day to Paris.':'days to Paris.');
+  } else if(today<=departure){
+    const dayNum=Math.floor((today-arrival)/msDay)+1;
+    el.textContent=currentLang==='pt'?'Dia '+dayNum:'Day '+dayNum;
+    if(sub)sub.textContent=currentLang==='pt'?'de 7 em Paris.':'of 7 in Paris.';
+  } else {
+    el.textContent=currentLang==='pt'?'Fait':'Done';
+    if(sub)sub.textContent=currentLang==='pt'?'Até a próxima viagem.':'Until the next adventure.';
+  }
+}
+
+function setupTodayCard(){
+  const titleEl=document.getElementById('todayTitle');
+  const metaEl=document.getElementById('todayMeta');
+  const actionEl=document.getElementById('todayAction');
+  if(!titleEl||!metaEl||!actionEl)return;
+  const today=new Date();today.setHours(0,0,0,0);
+  const arrival=new Date(2026,4,19);
+  const departure=new Date(2026,4,25);
+  const msDay=86400000;
+  let meta;
+  if(today<arrival)meta=DAY_META[0];
+  else if(today>departure)meta=DAY_META[6];
+  else{const idx=Math.floor((today-arrival)/msDay);meta=DAY_META[Math.min(idx,DAY_META.length-1)]||DAY_META[0];}
+  titleEl.textContent=meta[currentLang].name;
+  metaEl.textContent=meta[currentLang].tag;
+  actionEl.setAttribute('href','#'+meta.id);
+}
+
+function updateDockActive(){
+  const sections=['top','essentials','itinerary','insider','phrases'];
+  let active='top';
+  const y=window.scrollY+window.innerHeight*0.35;
+  for(const s of sections){const el=document.getElementById(s);if(el&&el.offsetTop<=y)active=s;}
+  document.querySelectorAll('.dock a').forEach(a=>{a.classList.toggle('active',a.dataset.dock===active);});
+}
+
+function saveState(){const s={};ALL_STOPS.forEach(id=>{s[id]=document.getElementById(id)?.classList.contains('checked')||false});localStorage.setItem(STORAGE_KEY,JSON.stringify(s))}
+function saveNote(){const n={};document.querySelectorAll('.notes-area').forEach(ta=>{n[ta.dataset.day]=ta.value});localStorage.setItem(NOTES_KEY,JSON.stringify(n))}
+function loadState(){
+  const s=JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}');Object.entries(s).forEach(([id,ck])=>{if(ck)document.getElementById(id)?.classList.add('checked')});
+  const n=JSON.parse(localStorage.getItem(NOTES_KEY)||'{}');document.querySelectorAll('.notes-area').forEach(ta=>{if(n[ta.dataset.day])ta.value=n[ta.dataset.day]});
+  updateProgress();
+}
+
+function applyLang(){
+  document.querySelectorAll('[data-en]').forEach(el=>{const t=el.getAttribute('data-'+currentLang);if(t!==null&&el.tagName!=='TEXTAREA')el.innerHTML=t});
+  document.querySelectorAll('.notes-area').forEach(ta=>{const ph=ta.getAttribute('data-placeholder-'+currentLang);if(ph)ta.placeholder=ph});
+  document.getElementById('btnEN').classList.toggle('active',currentLang==='en');
+  document.getElementById('btnPT').classList.toggle('active',currentLang==='pt');
+  document.documentElement.lang=currentLang==='en'?'en':'pt-BR';
+  buildPhrases();updateHero();
+}
+
+function setLang(lang){currentLang=lang;localStorage.setItem('vivi_paris_lang',lang);applyLang()}
+function toggleTheme(){
+  const isDark=document.body.classList.toggle('dark');
+  document.getElementById('themeBtn').textContent=isDark?'☀️':'☾';
+  localStorage.setItem('vivi_paris_theme',isDark?'dark':'light');
+}
+
+// Cover stars
+(function(){
+  const c=document.getElementById('coverStars');
+  if(!c)return;
+  for(let i=0;i<70;i++){
+    const s=document.createElement('div');
+    s.className='cover-star';
+    const sz=Math.random()<0.2?3:Math.random()<0.4?2:1;
+    s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;width:${sz}px;height:${sz}px;--d:${2+Math.random()*4}s;--delay:${-Math.random()*5}s;--o:${0.1+Math.random()*0.5}`;
+    c.appendChild(s);
+  }
+})();
+
+if('serviceWorker' in navigator)window.addEventListener('load',()=>{navigator.serviceWorker.register('./sw.js').catch(()=>{})});
+
+document.addEventListener('DOMContentLoaded',()=>{
+  loadState();applyLang();
+  if(localStorage.getItem('vivi_paris_theme')==='dark'){document.body.classList.add('dark');document.getElementById('themeBtn').textContent='☀️';}
+  updateHero();updateDockActive();
+  window.addEventListener('scroll',()=>{updateDockActive();},{passive:true});
+});
+</script>
+</body>
+</html>
